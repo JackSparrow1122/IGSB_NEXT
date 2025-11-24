@@ -22,8 +22,8 @@ export default function MBA() {
   // Brochure Download
   const handleBrochureDownload = () => {
     const link = document.createElement("a");
-    link.href = "/brochures/ICEMAdmissionBrochure2025.pdf";
-    link.download = "ICEM-Brochure.pdf";
+    link.href = "/IGSB/programmes/IGSB-Prospectus-Final.pdf";
+    link.download = "IGSB-Brochure.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -204,8 +204,8 @@ export default function MBA() {
         {/* Background Image */}
         <div className="absolute inset-0">
           <Image
-            src="/Programs/MBA1.jpg"
-            alt="Artificial Intelligence Program"
+            src="/IGSB/Programmes/Banner.jpg"
+            alt="MBA Program"
             fill
             className="object-cover object-center scale-105  opacity-90"
             priority
@@ -417,7 +417,7 @@ export default function MBA() {
         <FAQSection />
       </div>
 
-          {isModalOpen && (
+      {isModalOpen && (
         <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex justify-center items-center z-[60] animate-in fade-in-0 duration-300">
           <div className="bg-white w-[90%] md:w-[680px] p-6 rounded-lg shadow-lg relative max-h-[90vh] overflow-y-auto animate-in fade-in-0 zoom-in-95 duration-500">
             {/* Close Button */}

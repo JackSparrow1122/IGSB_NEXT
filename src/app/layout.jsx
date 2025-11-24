@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <title>ICEM - Indira College of Engineering and Management</title>
+        <title>IGSB - Indira Global School of Business</title>
         <meta
           name="description"
           content="Official ICEM website built with Next.js and Tailwind CSS"

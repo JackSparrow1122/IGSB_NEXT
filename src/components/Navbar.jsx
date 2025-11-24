@@ -119,9 +119,8 @@ const Navbar = () => {
               label: "Institutions Innovation Council (IIC)",
               link: "/about/IIC",
             },
-            ],
+          ],
         },
-      
       ],
     },
 
@@ -137,43 +136,56 @@ const Navbar = () => {
             },
             {
               label: "Students Certifications",
-              link: "/campus-life/induction-programme",
+              link: "/campus-life/student-certifications",
             },
             {
               label: "Student Induction",
-              link: "/campus-life/student-engagement#student-council",
-            },
-            { label: "Student Achievements", link: "/campus-life/nss" },
-            {
-              label: "Industry Institution Interaction",
-              link: "/campus-life/icem-awards",
+              link: "/campus-life/student-induction",
             },
             {
-              label: "Professional Associations",
-              link: "/campus-life/academics",
+              label: "Student Achievements",
+              link: "/campus-life/student-achievements",
             },
+            // {
+            //   label: "Industry Institution Interaction",
+            //   link: "/campus-life/icem-awards",
+            // },
+            // {
+            //   label: "Professional Associations",
+            //   link: "/campus-life/academics",
+            // },
           ],
         },
         {
           title: "Student Committees",
           items: [
             {
-              label: "Student Grievance Redrerssal Committee",
-              link: "/campus-life/cultural-events",
+              label: "Student Grievance Redressal Committee",
+              link: "/campus-life/student-committees#student-grievance-redressal-committee",
             },
-            { label: "Anti Ragging Committee", link: "/campus-life/sports" },
-            { label: "Anti Ragging Squad", link: "/campus-life/clubs" },
-            // { label: "Technical Fest", link: "/campus-life/tech-fest" },
-            // { label: "Workshops & Seminars", link: "/campus-life/workshops" },
+            {
+              label: "Anti Ragging Committee",
+              link: "/campus-life/student-committees#anti-ragging-committee",
+            },
+            {
+              label: "Anti Ragging Squad",
+              link: "/campus-life/student-committees#anti-ragging-squad",
+            },
             {
               label: "Student Welfare Council",
-              link: "/campus-life/annual-fest",
+              link: "/campus-life/student-committees#students-welfare-council",
             },
-            { label: "Student Counsellor", link: "/campus-life/annual-fest" },
-            { label: "Event Committee", link: "/campus-life/annual-fest" },
+            {
+              label: "Student Counsellor",
+              link: "/campus-life/student-committees#student-counsellor",
+            },
+            // {
+            //   label: "Event Committee",
+            //   link: "/campus-life/student-committees#event-committee", // If needed later
+            // },
             {
               label: "Online Grievance Redressal Mechanism",
-              link: "/campus-life/annual-fest",
+              link: `https://forms.office.com/pages/responsepage.aspx?id=Q_oIpAgyHUCWj_ew96nH5GqgRKaPsvhHsV5PWUUqBe1UQzlUNDZDTE0zMlZUTjVCUU40VjAwUFU3Qy4u`, // If added later
             },
           ],
         },
@@ -187,15 +199,15 @@ const Navbar = () => {
           items: [
             {
               label: "Program Details/ Orientation",
-              link: "/programs/computer-engineering",
+              link: "/programs/mba",
             },
             {
               label: "Admissions",
-              link: "/programs/mechanical-engineering",
+              link: "/programs/mba",
             },
             {
               label: "Human Capital/ Intellectual Capital",
-              link: "/programs/ai-ds",
+              link: "/programs/mba",
             },
           ],
         },
