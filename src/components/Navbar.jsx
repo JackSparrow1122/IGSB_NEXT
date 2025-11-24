@@ -165,16 +165,15 @@ const Navbar = () => {
           items: [
             {
               label: "Students Engagement",
-              link: "/campus-life/student-welfare",
+              link: "/campus-life/student-engagement",
             },
-            { label: "IIC", link: "/campus-life/student-welfare#iic" },
             {
               label: "Students Certifications",
               link: "/campus-life/induction-programme",
             },
             {
               label: "Student Induction",
-              link: "/campus-life/student-welfare#student-council",
+              link: "/campus-life/student-engagement#student-council",
             },
             { label: "Student Achievements", link: "/campus-life/nss" },
             {
