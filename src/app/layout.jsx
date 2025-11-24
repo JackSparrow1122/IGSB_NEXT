@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <FixedActionBar />
         <main className="flex-grow">{children}</main>
-        <div className="w-full bg-zinc-100">
+        {/* <div className="w-full bg-zinc-100">
           <Image
             src="/footer-illustration.webp"
             alt="Indira College Silhouette"
@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
             className="w-full h-auto object-cover"
             priority
           />
-        </div>
+        </div> */}
         <Footer />
       </body>
     </html>

@@ -100,60 +100,28 @@ const Navbar = () => {
           items: [
             {
               label: "Board of Governance",
-              link: "/about/overview",
+              link: "/about/governance",
             },
 
             {
-              label: "College Developement Committee",
-              link: "/about/facilities",
+              label: "Committee's",
+              link: "/about/committee",
             },
             {
-              label: "Grievance Redressal Committee",
-              link: "/about/governance",
+              label: "Cell's",
+              link: "/about/cell",
             },
             {
-              label: "Industry Institutional Cell",
-              link: "/about/accreditation",
+              label: "Research & Consultancy",
+              link: "/about/Research",
             },
             {
               label: "Institutions Innovation Council (IIC)",
-              link: "/about/accreditation",
+              link: "/about/IIC",
             },
-            {
-              label: "Intellectual Property Right Cell",
-              link: "/about/accreditation",
-            },
-            { label: "Internal Committee", link: "/about/accreditation" },
-            {
-              label: "Caste Based Discrimination Committee",
-              link: "/about/accreditation",
-            },
-            { label: "Divyang Cell", link: "/about/accreditation" },
-            { label: "Internship Cell", link: "/about/accreditation" },
-          ], // Change This to a single page or Subsection like groups of committees
+            ],
         },
-        {
-          title: null,
-          offsetTop: true,
-          items: [
-            {
-              label: "Academic Advisory Committee",
-              link: "/about/accreditation",
-            },
-            { label: "Examination Committee", link: "/about/accreditation" },
-            { label: "Research & Consultancy", link: "/about/accreditation" },
-            { label: "Mentoring Committee", link: "/about/accreditation" },
-            { label: "Placement Cell", link: "/about/accreditation" },
-            { label: "Library Committee", link: "/about/accreditation" },
-            { label: "ICT Committee", link: "/about/accreditation" },
-            {
-              label: "Administrative and Account Committee",
-              link: "/about/accreditation",
-            },
-            { label: "Branding & Creative Cell", link: "/about/accreditation" },
-            { label: "Hostel Committee", link: "/about/accreditation" },
-          ], // Change This to a single page or Subsection like groups of committees
-        },
+      
       ],
     },
 
