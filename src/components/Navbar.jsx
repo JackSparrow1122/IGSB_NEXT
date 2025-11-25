@@ -348,7 +348,7 @@ const Navbar = () => {
       {/* ===== NAVBAR ===== */}
       <nav
         ref={navbarRef}
-        className="w-full h-[15vh] flex bg-white shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
+        className="w-full h-[12vh] flex bg-white shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
       >
         {/* Left: Logo - 80% width on mobile */}
         <div className="w-full md:w-[30%] h-full flex items-center justify-start md:pl-0 md:justify-center">
@@ -356,9 +356,9 @@ const Navbar = () => {
             <Image
               src="/Logo.png"
               alt="Logo"
-              height={240}
-              width={240}
-              className="h-40 w-[80%] md:h-24 md:w-full cursor-pointer object-contain transition-transform duration-300 "
+              height={300}
+              width={300}
+              className="h-40 w-[80%] md:h-40 md:w-full cursor-pointer object-contain transition-transform duration-300 "
               priority
               unoptimized={true}
             />
