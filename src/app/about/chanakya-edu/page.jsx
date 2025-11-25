@@ -53,52 +53,19 @@ const ChanakyaEdu = () => {
 
   return (
     <div className="w-full bg-white text-gray-800">
+      <div className="relative w-full h-[40vh] sm:h-[50vh] lg:h-[70vh]">
+        <Image
+          src="/AboutBanner1.jpg"
+          alt="About Banner"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
       {/* Main Container */}
       <div className="max-w-7xl mx-auto py-16 px-6 space-y-20">
-        {/* About IGSB Section */}
-        <section id="about-igsb" className="relative scroll-mt-[15vh]">
-   
-          <div className="bg-white p-8 rounded-xl shadow-lg ">
-            <h2 className="text-3xl font-bold text-secondary mb-6">
-              About Indira Global School of Business
-            </h2>
-            <p className="text-gray-700 leading-relaxed text-lg">
-              About Indira Global School of Business (IGSB) has been established
-              with the explicit vision to train managers with a global
-              perspective who can provide sustainable impetus to growing
-              international business. IGSB has established its presence in Pune
-              as a premier B- School offering MBA (MBA and MBA - Services
-              Management) affiliated to Savitribai Phule Pune University and
-              approved by AICTE, New Delhi. As a driving philosophy, the belief
-              is that the emerging global environment has created a scenario
-              where managers have to face greater situational challenges,
-              predict and handle the vagaries of the market and provide
-              sustainable strategic solutions to corporate issues. The current
-              global economy has created an environment where managers have to
-              face greater situational challenges; predict and handle the
-              impulses of the market and provide quality service management.
-              Such an environment requires professional graduates not only armed
-              with the necessary knowledge but also the confidence of facing
-              extreme competition with greater articulation. The IGSB campus is
-              located imposingly adjoining the Mumbai-Pune Expressway, on a
-              beautiful site amidst open fields and clusters of large trees in a
-              beautiful, green valley which gives a sense of endless space to
-              the quest of mind and soul. The infrastructure is dynamic in
-              nature because of our constant attempt to maintain pace with the
-              development opportunities available to us. Our infrastructure acts
-              as a facilitator for the effective delivery of our curriculum and
-              nurtures the quest for knowledge. The MBA programs (MBA and MBA -
-              Services Management) at IGSB equip students with fresh insights
-              and alternative ways of thinking, helping them to succeed in
-              highly unpredictable and non-linear conditions, making global
-              leaders out of them.
-            </p>
-          </div>
-        </section>
-
         {/* SCES Section */}
         <section id="about-sces" className="relative scroll-mt-[15vh]">
-        
           <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-6">
               Shree Chanakya Education Society (SCES)
@@ -137,10 +104,48 @@ const ChanakyaEdu = () => {
             </p>
           </div>
         </section>
+        {/* About IGSB Section */}
+        <section id="about-igsb" className="relative scroll-mt-[15vh]">
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
+            <h2 className="text-3xl font-bold text-secondary mb-6">
+              About Indira Global School of Business
+            </h2>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              About Indira Global School of Business (IGSB) has been established
+              with the explicit vision to train managers with a global
+              perspective who can provide sustainable impetus to growing
+              international business. IGSB has established its presence in Pune
+              as a premier B- School offering MBA (MBA and MBA - Services
+              Management) affiliated to Savitribai Phule Pune University and
+              approved by AICTE, New Delhi. As a driving philosophy, the belief
+              is that the emerging global environment has created a scenario
+              where managers have to face greater situational challenges,
+              predict and handle the vagaries of the market and provide
+              sustainable strategic solutions to corporate issues. The current
+              global economy has created an environment where managers have to
+              face greater situational challenges; predict and handle the
+              impulses of the market and provide quality service management.
+              Such an environment requires professional graduates not only armed
+              with the necessary knowledge but also the confidence of facing
+              extreme competition with greater articulation. The IGSB campus is
+              located imposingly adjoining the Mumbai-Pune Expressway, on a
+              beautiful site amidst open fields and clusters of large trees in a
+              beautiful, green valley which gives a sense of endless space to
+              the quest of mind and soul. The infrastructure is dynamic in
+              nature because of our constant attempt to maintain pace with the
+              development opportunities available to us. Our infrastructure acts
+              as a facilitator for the effective delivery of our curriculum and
+              nurtures the quest for knowledge. The MBA programs (MBA and MBA -
+              Services Management) at IGSB equip students with fresh insights
+              and alternative ways of thinking, helping them to succeed in
+              highly unpredictable and non-linear conditions, making global
+              leaders out of them.
+            </p>
+          </div>
+        </section>
 
         {/* Board of Trustees Section */}
         <section id="about-trustees" className="relative scroll-mt-[15vh]">
-       
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-3xl font-bold text-secondary mb-2">
               Board of Trustees
@@ -178,7 +183,6 @@ const ChanakyaEdu = () => {
           </div>
         </section>
 
-
         {/* Campus Experience / Additional Info Section */}
         <section id="about-campus" className="relative scroll-mt-[15vh]">
           <div className="bg-white p-8 rounded-xl shadow-lg">
@@ -188,97 +192,122 @@ const ChanakyaEdu = () => {
 
             {/* Text Block */}
             {/* Text Block */}
-        <div className="text-gray-700 leading-relaxed text-lg space-y-6 mb-10">
-          <p>
-            Established in 1994 under the visionary guidance of <span className="font-semibold">Dr. Tarita Shankar</span>, the
-            Indira Group of Institutes (IGI) in Pune has emerged as a premier educational institution dedicated to
-            shaping future-ready professionals. Founded by the <span className="font-semibold">Shree Chanakya Education Society (SCES)</span>,
-            IGI was envisioned as a platform to nurture talent, foster innovation, and empower students with the knowledge
-            and skills necessary to succeed in a rapidly evolving world.
-          </p>
+            <div className="text-gray-700 leading-relaxed text-lg space-y-6 mb-10">
+              <p>
+                Established in 1994 under the visionary guidance of{" "}
+                <span className="font-semibold">Dr. Tarita Shankar</span>, the
+                Indira Group of Institutes (IGI) in Pune has emerged as a
+                premier educational institution dedicated to shaping
+                future-ready professionals. Founded by the{" "}
+                <span className="font-semibold">
+                  Shree Chanakya Education Society (SCES)
+                </span>
+                , IGI was envisioned as a platform to nurture talent, foster
+                innovation, and empower students with the knowledge and skills
+                necessary to succeed in a rapidly evolving world.
+              </p>
 
-          <p>
-            With a strong legacy spanning over three decades, IGI has consistently pursued academic excellence while
-            promoting holistic development. The group has expanded its footprint to include <span className="font-semibold">12 distinguished institutes</span>
-            offering a wide array of programs across Management, Engineering, Information Technology, Pharmacy, Commerce,
-            Science, and Mass Communication. This multi-disciplinary approach enables IGI to provide a seamless educational
-            journey from <span className="font-semibold">Kindergarten to Doctorate</span>, preparing students to excel at every stage of their
-            academic and professional careers.
-          </p>
+              <p>
+                With a strong legacy spanning over three decades, IGI has
+                consistently pursued academic excellence while promoting
+                holistic development. The group has expanded its footprint to
+                include{" "}
+                <span className="font-semibold">
+                  12 distinguished institutes
+                </span>
+                offering a wide array of programs across Management,
+                Engineering, Information Technology, Pharmacy, Commerce,
+                Science, and Mass Communication. This multi-disciplinary
+                approach enables IGI to provide a seamless educational journey
+                from{" "}
+                <span className="font-semibold">Kindergarten to Doctorate</span>
+                , preparing students to excel at every stage of their academic
+                and professional careers.
+              </p>
 
-          <p>
-            At the heart of IGI's philosophy is a commitment to <span className="font-semibold">student empowerment</span>. The institutes focus not
-            only on delivering high-quality education but also on developing critical thinking, leadership, and
-            entrepreneurial skills. Students are encouraged to engage in practical learning experiences, research
-            initiatives, industry collaborations, and community service, fostering an environment that promotes innovation,
-            ethical values, and social responsibility.
-          </p>
+              <p>
+                At the heart of IGI's philosophy is a commitment to{" "}
+                <span className="font-semibold">student empowerment</span>. The
+                institutes focus not only on delivering high-quality education
+                but also on developing critical thinking, leadership, and
+                entrepreneurial skills. Students are encouraged to engage in
+                practical learning experiences, research initiatives, industry
+                collaborations, and community service, fostering an environment
+                that promotes innovation, ethical values, and social
+                responsibility.
+              </p>
 
-          <p>
-            IGI takes pride in its <span className="font-semibold">state-of-the-art infrastructure</span>, experienced faculty, and a supportive learning
-            environment that encourages curiosity, creativity, and self-confidence. The campus culture is designed to
-            inspire students to explore their potential fully, embrace challenges, and emerge as competent, confident, and
-            socially conscious professionals.
-          </p>
+              <p>
+                IGI takes pride in its{" "}
+                <span className="font-semibold">
+                  state-of-the-art infrastructure
+                </span>
+                , experienced faculty, and a supportive learning environment
+                that encourages curiosity, creativity, and self-confidence. The
+                campus culture is designed to inspire students to explore their
+                potential fully, embrace challenges, and emerge as competent,
+                confident, and socially conscious professionals.
+              </p>
 
-          <p>
-            Over the years, IGI has built a strong network of alumni who have made significant contributions across
-            industries, demonstrating the institute's commitment to nurturing talent and leadership. By combining academic
-            rigor with experiential learning and industry exposure, IGI equips its students to thrive in diverse
-            professional landscapes, adapt to emerging trends, and lead with vision and integrity.
-          </p>
+              <p>
+                Over the years, IGI has built a strong network of alumni who
+                have made significant contributions across industries,
+                demonstrating the institute's commitment to nurturing talent and
+                leadership. By combining academic rigor with experiential
+                learning and industry exposure, IGI equips its students to
+                thrive in diverse professional landscapes, adapt to emerging
+                trends, and lead with vision and integrity.
+              </p>
 
-          <p>
-            As a beacon of educational excellence in Pune, the Indira Group of Institutes continues to innovate, inspire,
-            and lead. With a forward-looking approach and a student-centric ethos, IGI remains dedicated to creating
-            opportunities for growth, fostering lifelong learning, and preparing a generation of leaders who are ready to
-            make a meaningful impact in the world.
-          </p>
-        </div>
-
+              <p>
+                As a beacon of educational excellence in Pune, the Indira Group
+                of Institutes continues to innovate, inspire, and lead. With a
+                forward-looking approach and a student-centric ethos, IGI
+                remains dedicated to creating opportunities for growth,
+                fostering lifelong learning, and preparing a generation of
+                leaders who are ready to make a meaningful impact in the world.
+              </p>
+            </div>
 
             {/* Images */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {/* IGBS */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-            <Image
-              src="/IGSB.jpg"
-              alt="Indira Global School of Business (IGSB)"
-              width={1200}
-              height={800}
-              className="w-full h-64 object-cover"
-            />
-            <div className="py-4 text-center">
-              <h3 className="text-lg font-semibold text-gray-800">
-                Indira Global School of Bussiness (IGSB)
-              </h3>
-            </div>
-          </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* IGBS */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <Image
+                  src="/IGSB.jpg"
+                  alt="Indira Global School of Business (IGSB)"
+                  width={1200}
+                  height={800}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="py-4 text-center">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Indira Global School of Bussiness (IGSB)
+                  </h3>
+                </div>
+              </div>
 
-          {/* ICEM */}
-          <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
-            <Image
-              src="/ICEM.jpg"
-              alt="Indira College of Engineering & Management (ICEM)"
-              width={1200}
-              height={800}
-              className="w-full h-64 object-cover"
-            />
-            <div className="py-4 text-center">
-              <h3 className="text-lg font-semibold text-gray-800">
-                Indira College of Engineering & Management (ICEM)
-              </h3>
+              {/* ICEM */}
+              <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                <Image
+                  src="/ICEM.jpg"
+                  alt="Indira College of Engineering & Management (ICEM)"
+                  width={1200}
+                  height={800}
+                  className="w-full h-64 object-cover"
+                />
+                <div className="py-4 text-center">
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Indira College of Engineering & Management (ICEM)
+                  </h3>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
           </div>
         </section>
 
-
         {/* Chairperson Section */}
         <section id="about-chairperson" className="relative scroll-mt-[15vh]">
-       
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-3xl font-bold text-secondary mb-10">
               Chairperson & Chief Mentor's – IGI Message
@@ -293,7 +322,6 @@ const ChanakyaEdu = () => {
                     width={500}
                     height={600}
                     className="w-full h-auto object-contain rounded-2xl"
-
                   />
                 </div>
               </div>
@@ -400,7 +428,6 @@ const ChanakyaEdu = () => {
                   </h3>
 
                   <div>
-            
                     <ul className="space-y-6 text-gray-700 leading-relaxed text-lg">
                       <li className="py-2">
                         <span className="font-semibold text-secondary">1.</span>{" "}
@@ -734,7 +761,6 @@ const ChanakyaEdu = () => {
 
         {/* Recognition / Affiliation Section */}
         <section id="about-recognition" className="relative scroll-mt-[15vh]">
-     
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-3xl font-bold text-secondary mb-8">
               Recognition / Affiliation

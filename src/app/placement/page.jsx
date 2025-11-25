@@ -19,19 +19,27 @@ import PlacementCell from "@/components/PlacementComponents/PlacementCell";
 function Placement() {
   return (
     <div className="w-full bg-white">
+      <div className="relative w-full h-[40vh] sm:h-[50vh] lg:h-[70vh]">
+        <Image
+          src="/PlacementBanner1.jpg"
+          alt="Placement Banner"
+          fill
+          priority
+          className="object-cover"
+        />
+      </div>
       {/* <PlacementCarousel/> */}
       {/* <Typingsection /> */}
       <Impact />
       <RecruitersSection />
       {/* <ResearchLab />  */}
-      <Career /> 
+      <Career />
       <CASsection />
       <PlacementRecords />
       <PlacementOrientation />
       <PlacementIndustryVisit />
       <PlacementCell />
       {/* <Companies /> */}
-
 
       {/* <TrainingOverview /> */}
       {/* <Upskilling /> */}

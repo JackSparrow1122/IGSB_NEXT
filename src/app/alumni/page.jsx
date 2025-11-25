@@ -24,7 +24,7 @@ Fun and entertainment continued with interactive faculty activities and engaging
 The event concluded with specialization-wise interactive sessions and a panel discussion, fostering insightful conversations and future collaborations among alumni and faculty.
 
 The IGSB Alumni Meet 2025 stands as a testament to the institute’s enduring legacy, providing a platform for learning, enjoyment, and renewed bonds.`,
-      images: ["/IGSB/Alumni/AlumniMeet/Meet25.png"], 
+      images: ["/IGSB/Alumni/AlumniMeet/Meet25.png"],
     },
 
     {
@@ -613,10 +613,19 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
         />
       </Head>
 
-      <div className="min-h-screen bg-gray-50 py-16">
+      <div className="min-h-screen bg-gray-50">
+        <div className="relative w-full h-[40vh] sm:h-[50vh] lg:h-[65vh]">
+          <Image
+            src="/NISMBanner1.jpg"
+            alt="Alumni Banner"
+            fill
+            priority
+            className="object-cover"
+          />
+        </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           {/* ✅ Header Section */}
-          <div className="text-center">
+          <div className="text-center  py-8">
             <h1 className="text-4xl font-bold text-secondary mb-4">
               ICEM Alumni Network
             </h1>
