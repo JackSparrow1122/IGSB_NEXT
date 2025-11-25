@@ -145,8 +145,7 @@ export default function Cell() {
 
         {/* ✅ Industry Institutional Cell */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Industry Institutional Cell</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], industryInstitutionalCell)}
           </div>
@@ -154,8 +153,8 @@ export default function Cell() {
 
         {/* ✅ IPR Cell */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+    
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Intellectual Property Right Cell</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], iprCell)}
           </div>
@@ -163,8 +162,8 @@ export default function Cell() {
 
         {/* ✅ Equal Opportunity Committee */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+   
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Caste Based Discrimination Committee (Equal Opportunity Cell)</h2>
             {renderTable(["Sr.No", "Name of the Member", "Mobile Number", "Role", "Representation"], equalOpportunityCell)}
           </div>
@@ -172,8 +171,8 @@ export default function Cell() {
 
         {/* ✅ Divyang Cell */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+        
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Divyang Cell</h2>
             {renderTable(["Sr.No", "Name of the Member", "Mobile Number", "Role", "Representation"], divyangCell)}
           </div>
@@ -181,8 +180,8 @@ export default function Cell() {
 
         {/* ✅ Internship Cell */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+        
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Internship Cell</h2>
             {renderTable(["Sr.No", "Name of the Member", "Mobile Number", "Role", "Representation"], internshipCell)}
           </div>
@@ -190,8 +189,8 @@ export default function Cell() {
 
         {/* ✅ Placement Cell */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+      
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Placement Cell</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], placementCell)}
           </div>
@@ -199,8 +198,8 @@ export default function Cell() {
 
         {/* ✅ Branding & Creative Cell */}
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Branding and Creative Cell</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], brandingCell)}
           </div>

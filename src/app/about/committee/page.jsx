@@ -211,80 +211,80 @@ export default function Committee() {
   
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">College Development Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], collegeDevelopmentCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+      
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Grievance Redressal Committee - Staff</h2>
             {renderTable(["Sr.No", "Name of the Member", "Mobile Number", "Role", "Representation"], grievanceCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+       
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Internal Complaints Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Mobile Number", "Role", "Representation"], internalComplaintsCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+   
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Academic Advisory Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Designation"], academicAdvisoryCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+       
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Examination Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Designation"], examinationCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+         
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Mentoring Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], mentoringCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Library Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Designation"], libraryCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+    
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">ICT Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], ictCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+    
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Administration, Accounts & Maintenance Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Designation"], adminCommittee)}
           </div>
         </section>
 
         <section className="relative">
-          <div className="absolute -left-4 top-0 w-2 h-20 bg-secondary"></div>
-          <div className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-secondary">
+     
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <h2 className="text-3xl font-bold text-secondary mb-8">Hostel Committee</h2>
             {renderTable(["Sr.No", "Name of the Member", "Role", "Representation"], hostelCommittee)}
           </div>

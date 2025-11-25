@@ -17,12 +17,7 @@ export default function EventsSection() {
       description:
         "A celebration of patriotism and valor with vibrant cultural performances and student participation.",
     },
-    {
-      img: "/events/EngineeringInduction.jpg",
-      title: "Engineering Induction Program",
-      description:
-        "Welcoming the new engineering batch with orientation, team-building, and innovation showcases.",
-    },
+    
     {
       img: "/events/gusto.jpg",
       title: "Gusto – Annual Tech Fest",

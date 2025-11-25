@@ -11,7 +11,7 @@ const ExploreSection = () => {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto pt-20 pb-10 space-y-8">
+    <div className="max-w-7xl mx-auto pt-10 pb-10 space-y-8">
 
       {/* ------------------ ROW 1: HEADING (LEFT) ------------------ */}
       <div className="grid grid-cols-1 lg:grid-cols-[65%_35%]">
