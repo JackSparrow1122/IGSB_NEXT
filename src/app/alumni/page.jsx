@@ -7,6 +7,8 @@ import Image from "next/image";
 export default function Alumni() {
   const [activeTab, setActiveTab] = useState("alumni");
 
+  const [showMoreAchievements, setShowMoreAchievements] = useState(false);
+
   /* ✅ Alumni Meet Sections — FULLY UPDATED */
   const alumniMeet = [
     {
@@ -22,7 +24,7 @@ Fun and entertainment continued with interactive faculty activities and engaging
 The event concluded with specialization-wise interactive sessions and a panel discussion, fostering insightful conversations and future collaborations among alumni and faculty.
 
 The IGSB Alumni Meet 2025 stands as a testament to the institute’s enduring legacy, providing a platform for learning, enjoyment, and renewed bonds.`,
-      images: ["/IGSB/AlumniMeet/2025/M1.jpg"], // ✅ Update with real path
+      images: ["/IGSB/Alumni/AlumniMeet/Meet25.png"], 
     },
 
     {
@@ -35,10 +37,10 @@ Students were encouraged to choose roles that align with career aspirations inst
 
 Overall, the discussion helped students gain clarity, direction, and motivation for their future careers.`,
       images: [
-        "/IGSB/AlumniMeet/2024/M1.jpg",
-        "/IGSB/AlumniMeet/2024/M2.jpg",
-        "/IGSB/AlumniMeet/2024/M3.jpg",
-        "/IGSB/AlumniMeet/2024/M4.jpg",
+        "/IGSB/Alumni/AlumniMeet/1Meet23.jpg",
+        "/IGSB/Alumni/AlumniMeet/2Meet23.jpg",
+        "/IGSB/Alumni/AlumniMeet/3Meet23.jpg",
+        "/IGSB/Alumni/AlumniMeet/4Meet23.jpg",
       ],
     },
 
@@ -69,10 +71,10 @@ Alumni Inputs:
 • Suggested identifying high-performing students for advanced inputs  
 • Recommended training in communication, business etiquette, professionalism, mental well-being, technical certifications`,
       images: [
-        "/IGSB/AlumniMeet/2023/M1.jpg",
-        "/IGSB/AlumniMeet/2023/M2.jpg",
-        "/IGSB/AlumniMeet/2023/M3.jpg",
-        "/IGSB/AlumniMeet/2023/M4.jpg",
+        "/IGSB/Alumni/AlumniMeet/1Meeet24.jpg",
+        "/IGSB/Alumni/AlumniMeet/2Meet24.jpg",
+        "/IGSB/Alumni/AlumniMeet/3Meet24.jpg",
+        "/IGSB/Alumni/AlumniMeet/4Meet24.jpg",
       ],
     },
 
@@ -92,7 +94,7 @@ The Alumni Portal, achievements, and opportunities to contribute were highlighte
 
 Outcome:
 The meet was insightful, engaging, and productive with exchange of ideas, feedback, networking, and commitment toward student development.`,
-      images: ["/IGSB/AlumniMeet/2022/M1.jpg"],
+      images: ["/IGSB/Alumni/AlumniMeet/Meet22.jpg"],
     },
   ];
 
@@ -109,7 +111,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2022-23",
     },
     {
-      img: "/alumni/A2.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/NP2223.png",
       topic: "Placement Preparatory Session (ANZ Bank)",
       speaker: "MS. Nisha Pareekh",
       date: "1 st November, 2022",
@@ -118,7 +120,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2022-23",
     },
     {
-      img: "/alumni/A3.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/NG2223.png",
       topic: "Placement Preparatory Session (Nielsen IQ)",
       speaker: "Nikita Gedam",
       organization: "Nielsen IQ",
@@ -128,7 +130,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2022-23",
     },
     {
-      img: "/alumni/A3.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/PB2223.png",
       topic: "Placement Preparatory Session (Nielsen IQ)",
       speaker: "Pratik Balkawade",
       organization: "Nielsen IQ",
@@ -138,7 +140,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2022-23",
     },
     {
-      img: "/alumni/A3.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/ST2223.png",
       topic: "Sector Deep Dive of IT and ITES sector.",
       speaker: "Mr. Saurabh Tadelkar",
       organization: "TIBCO Software",
@@ -148,7 +150,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2022-23",
     },
     {
-      img: "/alumni/A4.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/AK2223.jpg",
       topic: " Placement preparation for core sales roles.",
       speaker: "Akshay Shirke",
       organization: "Amazon (Customer Service Manager)",
@@ -158,7 +160,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2020-21",
     },
     {
-      img: "/alumni/A5.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/HP2223.jpg",
       topic: "Practical tips and domain knowledge to crack interviews.",
       speaker: "Hemant Apte",
       organization: "Huron Consulting (EPM Consultant)",
@@ -168,7 +170,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2020-21",
     },
     {
-      img: "/alumni/A6.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/GS2223.jpg",
       topic: "Product Development and Pricing Strategies.",
       speaker: "Govind Singh",
       organization: "Renault India (Product Manager)",
@@ -178,7 +180,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2020-21",
     },
     {
-      img: "/alumni/A7.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/VV2223.jpg",
       topic: "Career Opportunities relating to Knowledge Management",
       speaker: " Vaishnavi Vartak",
       organization: "Deloitte (Business Analyst)",
@@ -188,7 +190,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
       academicYear: "2020-21",
     },
     {
-      img: "/alumni/A8.jpg",
+      img: "/IGSB/Alumni/AlumnniInteraction/ST2223.jpg",
       topic: "Overview of the profiles relating to Taxation",
       speaker: "Samiksha Tiwari",
       organization: "KPMG (Tax Associate)",
@@ -201,339 +203,333 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
 
   /* ✅ Alumni Achievements — ALL 23 CARDS RECORDED */
   const achievementCards = [
-  // ✅ Existing 23 Cards — unchanged
-  {
-    img: "",
-    name: "Prashant C Katrabad",
-    batch: "2012-14",
-    position: "AVP - Lead Business Analyst",
-    organization: "Credit Suisse",
-    awards: "Employee of the year, Employee of the Quarter, Best Newcomer",
-  },
-  {
-    img: "",
-    name: "Omkar Barge",
-    batch: "2014-16",
-    position: "Senior Territory Manager",
-    organization: "IDFC First Bank Ltd",
-    awards: "Ace Award winner",
-  },
-  {
-    img: "",
-    name: "Sridhar Kadam",
-    batch: "2013-14",
-    position: "Regional Lead",
-    organization: "Salesforce",
-    awards: "Presidents Club",
-  },
-  {
-    img: "",
-    name: "Mayuresh Sonawane",
-    batch: "2012-14",
-    position: "Operations Manager",
-    organization: "Stellar Value Chain Solutions",
-    awards: "Awarded for best Inventory Management",
-  },
-  {
-    img: "",
-    name: "Jyoti Dhanwani",
-    batch: "2012-14",
-    position: "Head of People & Culture Business Partner",
-    organization: "Agile Group of Companies, Ahmedabad",
-    awards: "Top 101 HR Tech Minds — World HRD Congress",
-  },
-  {
-    img: "",
-    name: "Rajashree Dilip Ghavate",
-    batch: "2018-20",
-    position: "Assistant Inspector",
-    organization: "RTO Nashik",
-    awards: "Selected as inspector via MPSC exam",
-  },
-  {
-    img: "",
-    name: "Praghya Anil Gurung",
-    batch: "2017-19",
-    position: "Deputy Manager",
-    organization: "Axis Bank Ltd.",
-    awards: "Awarded by CEO of ICICI Prudential LIC LTD",
-  },
-  {
-    img: "",
-    name: "Shrikant Shinde",
-    batch: "2017-19",
-    position: "Branch Sales Manager",
-    organization: "Piramal Capital & Housing Finance",
-    awards: "Business Heads Club Award — Best PAN India Portfolio (2nd Rank)",
-  },
-  {
-    img: "",
-    name: "Saurabh Kulkarni",
-    batch: "2017-19",
-    position: "SME Fixed Asset Associate",
-    organization: "NielsenIQ",
-    awards: "CFO Award 2022 Q1, Silver Award, Q1 2020 Best Performance",
-  },
-  {
-    img: "",
-    name: "Reshmi Bagchi",
-    batch: "2012-14",
-    position: "Entrepreneur, General Manager",
-    organization: "Medinilla Healthcare Pvt Ltd",
-    awards: "Language expert in French & Mandarin",
-  },
-  {
-    img: "",
-    name: "Sangram Mansing Abhang",
-    batch: "2011-13",
-    position: "Cloud Solution Architect",
-    organization: "Microsoft Corp Mumbai",
-    awards: "Best Employee, Spot Award",
-  },
-  {
-    img: "",
-    name: "Tapan Singh",
-    batch: "2010-12",
-    position: "Area Sales Manager",
-    organization: "Bata India Ltd",
-    awards: "Top 2 ASM India, Highest Franchisee Openings Award",
-  },
-  {
-    img: "",
-    name: "Saurabh Deb",
-    batch: "2011-13",
-    position: "Head - Student Outreach",
-    organization: "XL Education India",
-    awards:
-      "Multiple recognitions across organizations including Big Basket, Housejoy, Bajaj Finserv",
-  },
-  {
-    img: "",
-    name: "Amit Soni",
-    batch: "2011-13",
-    position:
-      "Senior Manager (Team Lead, Group Underwriting SME Business)",
-    organization: "NivaBupa Health Insurance",
-    awards: "Superstar Performer of the Year",
-  },
-  {
-    img: "",
-    name: "Sumanth Narla",
-    batch: "—",
-    position: "Business Head – EMR",
-    organization: "Sriven Corporation",
-    awards:
-      "Best Business Leader Award, Best Lorealian Award, Game Changer Award",
-  },
-  {
-    img: "",
-    name: "Kishan Kolhapur",
-    batch: "2013-15",
-    position: "Senior Business Analyst",
-    organization: "London Stock Exchange",
-    awards: "Branding Ambassador, Multiple project awards",
-  },
-  {
-    img: "",
-    name: "Amit Kumar",
-    batch: "2011-13",
-    position: "Project Manager",
-    organization: "Shyam Global",
-    awards: "Vice President — NGO Sahyog, The Helping Hand Delhi",
-  },
-  {
-    img: "",
-    name: "Nivesh Kumar",
-    batch: "2011-13",
-    position: "Area Business Manager",
-    organization: "Samsung Electronics",
-    awards: "Best CDE Award",
-  },
-  {
-    img: "",
-    name: "Shrikant Bambargekar",
-    batch: "2013-15",
-    position: "Strategy & Operations Associate — CEO Office",
-    organization: "Swades Foundation",
-    awards: "Chief Minister’s Fellowship Program Award — 2018",
-  },
-  {
-    img: "",
-    name: "Samiksha Tiwari",
-    batch: "2017-19",
-    position: "Tax Associate 2",
-    organization: "KPMG US",
-    awards: "Kudos Award",
-  },
-  {
-    img: "",
-    name: "Nikhil Wadekar",
-    batch: "2013-15",
-    position: "Assistant Vice President",
-    organization: "IndusInd Bank",
-    awards: "Multiple ICICI Bank Excellence & MDRT Awards",
-  },
-  {
-    img: "",
-    name: "Kamlesh Jagdale",
-    batch: "2013-15",
-    position:
-      "India Lead – University Recruiting and Early Talent Programs",
-    organization: "Nutanix",
-    awards:
-      "CEO Award, Business Excellence, Industry Partnership Award, Best Industry Mentor",
-  },
-  {
-    img: "",
-    name: "Neeklesh Sabale",
-    batch: "2014-16",
-    position: "Business Analyst",
-    organization: "Cognizant",
-    awards: "Best Performer of the Quarter & Year — Orbis Research",
-  },
+    // ✅ Existing 23 Cards — unchanged
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/PK1214.png",
+      name: "Prashant C Katrabad",
+      batch: "2012-14",
+      position: "AVP - Lead Business Analyst",
+      organization: "Credit Suisse",
+      awards: "Employee of the year, Employee of the Quarter, Best Newcomer",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/OB1416.jpg",
+      name: "Omkar Barge",
+      batch: "2014-16",
+      position: "Senior Territory Manager",
+      organization: "IDFC First Bank Ltd",
+      awards: "Ace Award winner",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SK1314.png",
+      name: "Sridhar Kadam",
+      batch: "2013-14",
+      position: "Regional Lead",
+      organization: "Salesforce",
+      awards: "Presidents Club",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/MS1214.png",
+      name: "Mayuresh Sonawane",
+      batch: "2012-14",
+      position: "Operations Manager",
+      organization: "Stellar Value Chain Solutions",
+      awards: "Awarded for best Inventory Management",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/JD1214.png",
+      name: "Jyoti Dhanwani",
+      batch: "2012-14",
+      position: "Head of People & Culture Business Partner",
+      organization: "Agile Group of Companies, Ahmedabad",
+      awards: "Top 101 HR Tech Minds — World HRD Congress",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/RDG1820.png",
+      name: "Rajashree Dilip Ghavate",
+      batch: "2018-20",
+      position: "Assistant Inspector",
+      organization: "RTO Nashik",
+      awards: "Selected as inspector via MPSC exam",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/PAG1719.png",
+      name: "Praghya Anil Gurung",
+      batch: "2017-19",
+      position: "Deputy Manager",
+      organization: "Axis Bank Ltd.",
+      awards: "Awarded by CEO of ICICI Prudential LIC LTD",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SS1719.png",
+      name: "Shrikant Shinde",
+      batch: "2017-19",
+      position: "Branch Sales Manager",
+      organization: "Piramal Capital & Housing Finance",
+      awards: "Business Heads Club Award — Best PAN India Portfolio (2nd Rank)",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SK1719.png",
+      name: "Saurabh Kulkarni",
+      batch: "2017-19",
+      position: "SME Fixed Asset Associate",
+      organization: "NielsenIQ",
+      awards: "CFO Award 2022 Q1, Silver Award, Q1 2020 Best Performance",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/RB1214.jpg",
+      name: "Reshmi Bagchi",
+      batch: "2012-14",
+      position: "Entrepreneur, General Manager",
+      organization: "Medinilla Healthcare Pvt Ltd",
+      awards: "Language expert in French & Mandarin",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SMA1113.png",
+      name: "Sangram Mansing Abhang",
+      batch: "2011-13",
+      position: "Cloud Solution Architect",
+      organization: "Microsoft Corp Mumbai",
+      awards: "Best Employee, Spot Award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/TS1012.png",
+      name: "Tapan Singh",
+      batch: "2010-12",
+      position: "Area Sales Manager",
+      organization: "Bata India Ltd",
+      awards: "Top 2 ASM India, Highest Franchisee Openings Award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SD1113.png",
+      name: "Saurabh Deb",
+      batch: "2011-13",
+      position: "Head - Student Outreach",
+      organization: "XL Education India",
+      awards:
+        "Multiple recognitions across organizations including Big Basket, Housejoy, Bajaj Finserv",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/AS1113.png",
+      name: "Amit Soni",
+      batch: "2011-13",
+      position: "Senior Manager (Team Lead, Group Underwriting SME Business)",
+      organization: "NivaBupa Health Insurance",
+      awards: "Superstar Performer of the Year",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SN.png",
+      name: "Sumanth Narla",
+      batch: "—",
+      position: "Business Head – EMR",
+      organization: "Sriven Corporation",
+      awards:
+        "Best Business Leader Award, Best Lorealian Award, Game Changer Award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/KK1315.png",
+      name: "Kishan Kolhapur",
+      batch: "2013-15",
+      position: "Senior Business Analyst",
+      organization: "London Stock Exchange",
+      awards: "Branding Ambassador, Multiple project awards",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/AK1113.jpg",
+      name: "Amit Kumar",
+      batch: "2011-13",
+      position: "Project Manager",
+      organization: "Shyam Global",
+      awards: "Vice President — NGO Sahyog, The Helping Hand Delhi",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/NK1113.png",
+      name: "Nivesh Kumar",
+      batch: "2011-13",
+      position: "Area Business Manager",
+      organization: "Samsung Electronics",
+      awards: "Best CDE Award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SB1315.png",
+      name: "Shrikant Bambargekar",
+      batch: "2013-15",
+      position: "Strategy & Operations Associate — CEO Office",
+      organization: "Swades Foundation",
+      awards: "Chief Minister’s Fellowship Program Award — 2018",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/ST1719.jpg",
+      name: "Samiksha Tiwari",
+      batch: "2017-19",
+      position: "Tax Associate 2",
+      organization: "KPMG US",
+      awards: "Kudos Award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/NW1315.jpg",
+      name: "Nikhil Wadekar",
+      batch: "2013-15",
+      position: "Assistant Vice President",
+      organization: "IndusInd Bank",
+      awards: "Multiple ICICI Bank Excellence & MDRT Awards",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/KJ1315.jpg",
+      name: "Kamlesh Jagdale",
+      batch: "2013-15",
+      position: "India Lead – University Recruiting and Early Talent Programs",
+      organization: "Nutanix",
+      awards:
+        "CEO Award, Business Excellence, Industry Partnership Award, Best Industry Mentor",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/NS1416.jpg",
+      name: "Neeklesh Sabale",
+      batch: "2014-16",
+      position: "Business Analyst",
+      organization: "Cognizant",
+      awards: "Best Performer of the Quarter & Year — Orbis Research",
+    },
 
-  // ✅ Newly Added Based on Shared Screenshots
-  {
-    img: "",
-    name: "Vikrant Kulkarni",
-    batch: "2014-16",
-    position: "Manager",
-    organization:
-      "Nayara Energy Ltd (formerly known as Essar Oil)",
-    awards:
-      "ABHIMAAN – Pride of Nayara 2022 for outstanding contribution in Retail",
-  },
-  {
-    img: "",
-    name: "Shimon Salve",
-    batch: "2016-18",
-    position: "Business Analyst",
-    organization: "Springer Nature",
-    awards:
-      "Shoutout Award for significant project contribution, PSPO certified B.A.",
-  },
-  {
-    img: "",
-    name: "Bhagwan Patil",
-    batch: "2012-14",
-    position: "Team Lead",
-    organization: "Citco",
-    awards: "Employee of the year in project, Star Performer",
-  },
-  {
-    img: "",
-    name: "Mahesh Mitkari",
-    batch: "2011-13",
-    position: "Associate Vice President Sales",
-    organization: "Truecopy Credentials Private Limited",
-    awards: "Recognized for best sales performance",
-  },
-  {
-    img: "",
-    name: "Paresh Gund",
-    batch: "2016-18",
-    position: "Assistant Sales Manager",
-    organization: "Kohinoor Group, Shirgaon",
-    awards:
-      "Awarded as Top Performer of the Year 2019 by Paranjape Schemes",
-  },
-  {
-    img: "",
-    name: "Sagar Chaudhari",
-    batch: "2019-21",
-    position: "L2 Manager",
-    organization: "—",
-    awards:
-      "Promoted from Sr. Associate to Manager; leading UI/UX, GET, product marketing & EV programs",
-  },
-  {
-    img: "",
-    name: "Vaishnavi Vartak",
-    batch: "2017-19",
-    position: "Sr. Analyst",
-    organization: "Deloitte, Hyderabad",
-    awards:
-      "Applause Award for excellence in project & stakeholder management",
-  },
-  {
-    img: "",
-    name: "Prashant C Katrabad",
-    batch: "2012-14",
-    position: "Business Analyst / Solution Consultant",
-    organization: "Ivy Mobility",
-    awards:
-      "Recognized for project execution & client engagement (2019–2020)",
-  },
-  {
-    img: "",
-    name: "Kiran Kad",
-    batch: "2013-15",
-    position: "—",
-    organization: "Abhiyanta India Solutions Pvt. Ltd.",
-    awards:
-      "Represented SAP India in Make in India Week 2016; interacted with Union Minister Nitin Gadkari",
-  },
-  {
-    img: "",
-    name: "Viraj Deshmukh",
-    batch: "2013-15",
-    position: "—",
-    organization: "Kolte Patil Developers Ltd",
-    awards:
-      '"Best Channel Manager" for outstanding sales performance in Pune region',
-  },
-  {
-    img: "",
-    name: "Hemant Apte",
-    batch: "2016-18",
-    position: "—",
-    organization: "KPMG",
-    awards: "Qualified UGC-NET",
-  },
-  {
-    img: "",
-    name: "Vishal Garje",
-    batch: "2015-17",
-    position: "—",
-    organization: "Deloitte",
-    awards: "Qualified UGC-NET",
-  },
-  {
-    img: "",
-    name: "Bhumika Bhardwaj",
-    batch: "2012-14",
-    position: "—",
-    organization: "Boyden Global Executive Search",
-    awards: "Most consistent employee award",
-  },
-  {
-    img: "",
-    name: "Rinky Soni",
-    batch: "2013-15",
-    position: "—",
-    organization:
-      "Signify Innovation’s India Ltd (Philips Lighting)",
-    awards: "Indira HR Excellence Award",
-  },
-  {
-    img: "",
-    name: "Eeshwari Pawar",
-    batch: "2015-17",
-    position: "—",
-    organization: "Deloitte",
-    awards:
-      "Spot Award, KX Clients Recognition, Applause Award for collaboration & domain expertise",
-  },
-  {
-  img: "",
-  name: "Shashank Mishra",
-  batch: "2012-2014",
-  position: "Assistant Manager",
-  organization: "Deloitte",
-  awards: "Applause Award, Spot Award",
-},
-];
-
+    // ✅ Newly Added Based on Shared Screenshots
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/VK1416.png",
+      name: "Vikrant Kulkarni",
+      batch: "2014-16",
+      position: "Manager",
+      organization: "Nayara Energy Ltd (formerly known as Essar Oil)",
+      awards:
+        "ABHIMAAN – Pride of Nayara 2022 for outstanding contribution in Retail",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SS1618.png",
+      name: "Shimon Salve",
+      batch: "2016-18",
+      position: "Business Analyst",
+      organization: "Springer Nature",
+      awards:
+        "Shoutout Award for significant project contribution, PSPO certified B.A.",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/BP1214.jpg",
+      name: "Bhagwan Patil",
+      batch: "2012-14",
+      position: "Team Lead",
+      organization: "Citco",
+      awards: "Employee of the year in project, Star Performer",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/MM1113.jpg",
+      name: "Mahesh Mitkari",
+      batch: "2011-13",
+      position: "Associate Vice President Sales",
+      organization: "Truecopy Credentials Private Limited",
+      awards: "Recognized for best sales performance",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/PG1618.png",
+      name: "Paresh Gund",
+      batch: "2016-18",
+      position: "Assistant Sales Manager",
+      organization: "Kohinoor Group, Shirgaon",
+      awards: "Awarded as Top Performer of the Year 2019 by Paranjape Schemes",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SC1921.png",
+      name: "Sagar Chaudhari",
+      batch: "2019-21",
+      position: "L2 Manager",
+      organization: "—",
+      awards:
+        "Promoted from Sr. Associate to Manager; leading UI/UX, GET, product marketing & EV programs",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/VV1719.png",
+      name: "Vaishnavi Vartak",
+      batch: "2017-19",
+      position: "Sr. Analyst",
+      organization: "Deloitte, Hyderabad",
+      awards:
+        "Applause Award for excellence in project & stakeholder management",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/PK1214.png",
+      name: "Prashant C Katrabad",
+      batch: "2012-14",
+      position: "Business Analyst / Solution Consultant",
+      organization: "Ivy Mobility",
+      awards:
+        "Recognized for project execution & client engagement (2019–2020)",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/KK1315.png",
+      name: "Kiran Kad",
+      batch: "2013-15",
+      position: "—",
+      organization: "Abhiyanta India Solutions Pvt. Ltd.",
+      awards:
+        "Represented SAP India in Make in India Week 2016; interacted with Union Minister Nitin Gadkari",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/VD1315.jpg",
+      name: "Viraj Deshmukh",
+      batch: "2013-15",
+      position: "—",
+      organization: "Kolte Patil Developers Ltd",
+      awards:
+        '"Best Channel Manager" for outstanding sales performance in Pune region',
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/HP1618.jpg",
+      name: "Hemant Apte",
+      batch: "2016-18",
+      position: "—",
+      organization: "KPMG",
+      awards: "Qualified UGC-NET",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/VG1517.png",
+      name: "Vishal Garje",
+      batch: "2015-17",
+      position: "—",
+      organization: "Deloitte",
+      awards: "Qualified UGC-NET",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/BB1214.png",
+      name: "Bhumika Bhardwaj",
+      batch: "2012-14",
+      position: "—",
+      organization: "Boyden Global Executive Search",
+      awards: "Most consistent employee award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/RS1315.jpg",
+      name: "Rinky Soni",
+      batch: "2013-15",
+      position: "—",
+      organization: "Signify Innovation’s India Ltd (Philips Lighting)",
+      awards: "Indira HR Excellence Award",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/EP1517.png",
+      name: "Eeshwari Pawar",
+      batch: "2015-17",
+      position: "—",
+      organization: "Deloitte",
+      awards:
+        "Spot Award, KX Clients Recognition, Applause Award for collaboration & domain expertise",
+    },
+    {
+      img: "/IGSB/Alumni/AlumniAchievements/SM1214.png",
+      name: "Shashank Mishra",
+      batch: "2012-2014",
+      position: "Assistant Manager",
+      organization: "Deloitte",
+      awards: "Applause Award, Spot Award",
+    },
+  ];
 
   /* ✅ Alumni Association Members — TABLE FROM IMAGE */
   const associationMembers = [
@@ -657,7 +653,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
           <div>
             {/* ✅ Alumni Description */}
             {activeTab === "alumni" && (
-              <div className="bg-white p-10 rounded-2xl shadow-lg text-lg text-gray-700 leading-[1.9] text-justify space-y-6">
+              <div className="bg-white p-10 rounded-2xl shadow-lg text-md text-gray-700 leading-[1.9] text-justify space-y-6">
                 <p>
                   Alumni are the strongest representation of Indira Global
                   School of Business in the outside world. The IGSB Alumni’s are
@@ -694,7 +690,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
                   Alumni Interaction Sessions
                 </h2>
 
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
                   {interactionCards.map((card, i) => (
                     <div
                       key={i}
@@ -705,7 +701,7 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
                         alt={card.speaker}
                         width={400}
                         height={400}
-                        className="w-full h-40 object-cover"
+                        className="w-full h-48 object-contain bg-gray-100"
                       />
 
                       <div className="p-4 text-sm text-gray-700 space-y-1">
@@ -713,24 +709,24 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
                           {card.topic}
                         </p>
                         <p>
-                          <span className="font-medium">Speaker:</span>{" "}
+                          <span className="font-bold">Speaker:</span>{" "}
                           {card.speaker}
                         </p>
                         <p>
-                          <span className="font-medium">Organization:</span>{" "}
+                          <span className="font-bold">Organization:</span>{" "}
                           {card.organization}
                         </p>
                         <p>
-                          <span className="font-medium">Date:</span> {card.date}
+                          <span className="font-bold">Date:</span> {card.date}
                         </p>
                         <p>
-                          <span className="font-medium">Time:</span> {card.time}
+                          <span className="font-bold">Time:</span> {card.time}
                         </p>
                         <p>
-                          <span className="font-medium">Mode:</span> {card.mode}
+                          <span className="font-bold">Mode:</span> {card.mode}
                         </p>
                         <p>
-                          <span className="font-medium">Academic Year:</span>{" "}
+                          <span className="font-bold">Academic Year:</span>{" "}
                           {card.academicYear}
                         </p>
                       </div>
@@ -741,41 +737,68 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
             )}
 
             {/* ✅ Alumni Achievements */}
+            {/* ✅ Alumni Achievements */}
             {activeTab === "achievements" && (
               <div className="space-y-10">
                 <h2 className="text-3xl font-bold text-secondary text-center">
                   Alumni Achievements
                 </h2>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-                  {achievementCards.map((card, i) => (
-                    <div
-                      key={i}
-                      className="bg-white rounded-2xl p-6 shadow-md border border-gray-200 space-y-4"
-                    >
-                      {/* Placeholder Image */}
-                      <div className="w-32 h-32 rounded-full overflow-hidden mx-auto bg-gray-200" />
+                {/* Show Limited Data */}
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                  {achievementCards
+                    .slice(
+                      0,
+                      showMoreAchievements ? achievementCards.length : 8
+                    )
+                    .map((card, i) => (
+                      <div
+                        key={i}
+                        className="bg-white rounded-2xl p-6 shadow-md border border-gray-200 space-y-4"
+                      >
+                        {/* Placeholder Image */}
+                        <Image
+                          src={card.img}
+                          alt={card.name}
+                          width={400}
+                          height={400}
+                          className="w-full h-48 object-contain bg-gray-100"
+                        />
 
-                      <div className="space-y-1 text-gray-700 text-sm">
-                        <p>
-                          <strong>Name of Student:</strong> {card.name}
-                        </p>
-                        <p>
-                          <strong>Batch:</strong> {card.batch}
-                        </p>
-                        <p>
-                          <strong>Position:</strong> {card.position}
-                        </p>
-                        <p>
-                          <strong>Organization:</strong> {card.organization}
-                        </p>
-                        <p>
-                          <strong>Awards:</strong> {card.awards}
-                        </p>
+                        <div className="space-y-1 text-gray-700 text-sm">
+                          <p>
+                            <strong>Name of Student:</strong> {card.name}
+                          </p>
+                          <p>
+                            <strong>Batch:</strong> {card.batch}
+                          </p>
+                          <p>
+                            <strong>Position:</strong> {card.position}
+                          </p>
+                          <p>
+                            <strong>Organization:</strong> {card.organization}
+                          </p>
+                          <p>
+                            <strong>Awards:</strong> {card.awards}
+                          </p>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
                 </div>
+
+                {/* Show More / Show Less Button */}
+                {achievementCards.length > 8 && (
+                  <div className="flex justify-center">
+                    <button
+                      onClick={() =>
+                        setShowMoreAchievements(!showMoreAchievements)
+                      }
+                      className="px-6 py-2 bg-secondary text-white rounded-lg shadow hover:bg-secondary/90 transition"
+                    >
+                      {showMoreAchievements ? "Show Less" : "Show More"}
+                    </button>
+                  </div>
+                )}
               </div>
             )}
 
@@ -822,11 +845,11 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
                       {m.heading}
                     </h2>
 
-                    <p className="text-gray-700 text-lg max-w-4xl mx-auto text-center leading-relaxed">
+                    <p className="text-gray-700 text-lg max-w-7xl mx-auto text-justify leading-relaxed">
                       {m.text}
                     </p>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-7xl mx-auto">
                       {m.images.map((img, index) => (
                         <div
                           key={index}

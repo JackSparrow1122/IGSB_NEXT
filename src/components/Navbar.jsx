@@ -74,25 +74,24 @@ const Navbar = () => {
           items: [
             {
               label: "Shree Chanakya Education Society",
-              link: "/about/chanakya-edu",
+              link: "/about/chanakya-edu#about-sces",
             },
 
-            { label: "Indira Group of Institutes ", link: "/about/igi" },
+            { label: "Indira Group of Institutes ", link: "/about/chanakya-edu#about-campus" },
             {
               label: "Indira Global School of Business",
-              link: "/about/IGSBOverview",
+              link: "/about/chanakya-edu#about-igsb",
             },
             {
               label: "Chairperson's Profile & Chief Mentor-IGI",
-              link: "/about/cfcm",
+              link: "/about/chanakya-edu#about-chairperson",
             },
-            { label: "Director's Profile", link: "/about/DP" },
-            { label: "Vision Mission & Values", link: "/about/accreditation" },
+            { label: "Director's Profile", link: "/about/chanakya-edu#about-director" },
+            { label: "Vision Mission & Values", link: "/about/chanakya-edu#about-vision" },
             {
               label: "Recognition / Affiliation",
-              link: "/about/accreditation",
+              link: "/about/chanakya-edu#about-recognition",
             },
-            { label: "Facilities", link: "/about/facilities" },
           ],
         },
         {
