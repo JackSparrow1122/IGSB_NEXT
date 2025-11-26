@@ -21,7 +21,8 @@ const HeroSlider = () => {
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isTransitioning, setIsTransitioning] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
+  const [previousIndex, setPreviousIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => handleNext(), 5000);
@@ -32,6 +33,7 @@ const HeroSlider = () => {
     const totalSlides = desktopImages.length;
 
     if (currentIndex === totalSlides - 1) {
+      setPreviousIndex(currentIndex);
       setIsTransitioning(true);
       setCurrentIndex(totalSlides);
 
@@ -40,12 +42,14 @@ const HeroSlider = () => {
         setCurrentIndex(0);
       }, 700);
     } else {
+      setPreviousIndex(currentIndex);
       setIsTransitioning(true);
       setCurrentIndex((prev) => prev + 1);
     }
   };
 
   const handleDotClick = (index) => {
+    setPreviousIndex(currentIndex);
     setIsTransitioning(true);
     setCurrentIndex(index);
   };
@@ -53,32 +57,37 @@ const HeroSlider = () => {
   return (
     <div className="relative w-full h-[70vh] overflow-hidden">
       {/* ---------------- DESKTOP SLIDER ---------------- */}
-      <div className="hidden md:block">
-        <div
-          className={`flex ${
-            isTransitioning
-              ? "transition-transform duration-700 ease-in-out"
-              : ""
-          }`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {[...desktopImages, desktopImages[0]].map((img, i) => (
+      <div className="hidden md:block relative w-full h-full">
+        {[...desktopImages, desktopImages[0]].map((img, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 w-full h-full transition-all duration-700 ease-in-out ${
+              currentIndex === i
+                ? "opacity-100 scale-100"
+                : previousIndex === i
+                ? "opacity-0 scale-100"
+                : "opacity-0 scale-102"
+            }`}
+            style={{
+              transform: `scale(${currentIndex === i ? 1 : previousIndex === i ? 1 : 1.02})`,
+              zIndex: currentIndex === i ? 20 : previousIndex === i ? 10 : 0,
+            }}
+          >
             <Image
-              key={i}
               src={img}
               alt="banner"
-              className="w-full object-cover flex-shrink-0"
+              className="w-full h-full object-cover"
               width={1600}
               height={700}
               quality={100}
               unoptimized
-              priority
+              priority={i === 0}
             />
-          ))}
-        </div>
+          </div>
+        ))}
 
         {/* Dots */}
-        <div className="absolute bottom-6 right-6 flex gap-2">
+        <div className="absolute bottom-6 right-6 flex gap-2 z-30">
           {desktopImages.map((_, i) => (
             <div
               key={i}
@@ -98,28 +107,34 @@ const HeroSlider = () => {
       </div>
 
       {/* ---------------- MOBILE SLIDER ---------------- */}
-      <div className="block md:hidden">
-        <div
-          className={`flex ${
-            isTransitioning
-              ? "transition-transform duration-700 ease-in-out"
-              : ""
-          }`}
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-        >
-          {[...mobileImages, mobileImages[0]].map((img, i) => (
+      <div className="block md:hidden relative w-full h-full">
+        {[...mobileImages, mobileImages[0]].map((img, i) => (
+          <div
+            key={i}
+            className={`absolute inset-0 w-full h-full transition-all duration-700 ease-in-out ${
+              currentIndex === i
+                ? "opacity-100 scale-100"
+                : previousIndex === i
+                ? "opacity-0 scale-100"
+                : "opacity-0 scale-102"
+            }`}
+            style={{
+              transform: `scale(${currentIndex === i ? 1 : previousIndex === i ? 1 : 1.02})`,
+              zIndex: currentIndex === i ? 20 : previousIndex === i ? 10 : 0,
+            }}
+          >
             <Image
-              key={i}
               src={img}
               alt="mobile banner"
-              className="w-full object-cover flex-shrink-0"
+              className="w-full h-full object-cover"
               width={600}
               height={400}
               quality={100}
               unoptimized
+              priority={i === 0}
             />
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
 
       {/* ---------------- CSS ANIMATIONS ---------------- */}
@@ -133,23 +148,11 @@ const HeroSlider = () => {
           }
         }
         .animate-progressFill {
-          animation: progressFill 3s linear forwards;
+          animation: progressFill 5s linear forwards;
         }
 
-        @keyframes seamlessMarquee {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-50%);
-          }
-        }
-        .animate-seamlessMarquee {
-          animation: seamlessMarquee 25s linear infinite;
-        }
-
-        .clip-ribbon-left {
-          clip-path: polygon(0 0, 100% 0, 96% 50%, 100% 100%, 0 100%);
+        .scale-102 {
+          transform: scale(1.02);
         }
       `}</style>
     </div>
