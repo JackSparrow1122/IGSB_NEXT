@@ -60,7 +60,7 @@ export default function ApplyForm({ variant = "card" }) {
   return (
     <div
       id="contact-form"
-      className={`w-full ${
+      className={`w-full scroll-mt-[15vh] ${
         isModal ? "p-0" : "bg-white rounded-lg p-6 shadow-md border border-gray-200"
       }`}
     >

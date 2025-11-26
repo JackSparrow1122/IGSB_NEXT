@@ -19,9 +19,12 @@ const ExploreSection = () => {
   useEffect(() => {
     const section = sectionRef.current;
 
+    // ================================
+    // 1️⃣ TEXT & HEADING FADE-IN
+    // ================================
     gsap.fromTo(
-      section.querySelectorAll(".fade-target"),
-      { autoAlpha: 0, y: 50 },
+      section.querySelectorAll(".fade-text"),
+      { autoAlpha: 0, y: 40 },
       {
         autoAlpha: 1,
         y: 0,
@@ -30,8 +33,30 @@ const ExploreSection = () => {
         stagger: 0.2,
         scrollTrigger: {
           trigger: section,
-          scroller: document.body,
-          start: "top 80%",
+          start: "top 85%",
+          once: true,
+        },
+      }
+    );
+
+    // ================================
+    // 2️⃣ LOGOS – STAGGER RIGHT ➜ LEFT
+    // ================================
+    gsap.fromTo(
+      section.querySelectorAll(".fade-logo"),
+      { autoAlpha: 0, x: 60 },
+      {
+        autoAlpha: 1,
+        x: 0,
+        duration: 1.1,
+        ease: "power3.out",
+        stagger: {
+          each: 0.25,
+          from: "end", // 👉 Right-to-left
+        },
+        scrollTrigger: {
+          trigger: section.querySelector(".logos-wrapper"),
+          start: "top 90%",
           once: true,
         },
       }
@@ -43,11 +68,10 @@ const ExploreSection = () => {
       ref={sectionRef}
       className="w-full bg-white relative z-30 pt-20 pb-20"
     >
-      {/* Centered content container */}
       <div className="max-w-7xl mx-auto px-4 space-y-10">
-        
+
         {/* HEADING */}
-        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%]">
+        <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] fade-text">
           <div>
             <h2 className="text-2xl lg:text-3xl font-semibold text-gray-800 leading-tight">
               Explore Your Potential with
@@ -60,25 +84,27 @@ const ExploreSection = () => {
 
         {/* TEXT + LOGOS */}
         <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-10">
-          {/* Text */}
-          <div>
-            <p className="fade-target text-gray-700 text-lg lg:text-xl leading-relaxed text-justify">
+
+          {/* TEXT */}
+          <div className="fade-text">
+            <p className="text-gray-700 text-lg lg:text-xl leading-relaxed text-justify">
               Located near Pune, Indira Global School of Business one of the
-              leading NAAC-accredited MBA institution that offers a rich blend of
-              management education and research driven learning. Choose from
-              industry focused specializations, learn from research active faculty,
-              and gain practical insights through case studies, projects, and data
-              driven analysis, while accessing strong placements and opportunities
-              to participate in seminars, conferences, and research initiatives.
+              leading NAAC-accredited MBA institution that offers a rich blend
+              of management education and research driven learning. Choose from
+              industry focused specializations, learn from research active
+              faculty, and gain practical insights through case studies,
+              projects, and data driven analysis, while accessing strong
+              placements and opportunities to participate in seminars,
+              conferences, and research initiatives.
             </p>
           </div>
 
-          {/* Logos */}
-          <div className="flex gap-6 justify-start lg:justify-center items-start">
+          {/* LOGOS */}
+          <div className="logos-wrapper flex gap-6 justify-start lg:justify-center items-start">
             {logos.map((logo, index) => (
               <div
                 key={index}
-                className="fade-target flex items-center transition-transform duration-300 hover:scale-105"
+                className="fade-logo flex items-center transition-transform duration-300 hover:scale-105"
               >
                 <Image
                   src={logo.img}

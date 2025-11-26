@@ -8,6 +8,7 @@ import RecruitersSection from "@/components/home/RecruiterSection";
 import EnergyInnovation from "@/components/home/EnergyInnovation";
 import CollegeUnplugged from "@/components/home/CollegeUnplugged";
 import EventsSection from "@/components/home/EventSection";
+import CTASection from "@/components/home/CTASection";
 
 export default function HomePage() {
   return (
@@ -20,6 +21,7 @@ export default function HomePage() {
         <EnergyInnovation />
         <CollegeUnplugged />
         <EventsSection />
+        <CTASection />
       </ScrollCrushWrapper>
     </div>
   );
