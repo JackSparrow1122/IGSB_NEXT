@@ -62,7 +62,7 @@ export default function CTASection() {
 
         <button
           onClick={handleScrollToForm}
-          className="bg-[#08090a] text-white font-semibold px-8 py-3 rounded-md hover:bg-[#001e4a] transition-colors"
+          className="bg-white text-[#002D72] font-semibold px-8 py-3 hover:bg-gray-100 rounded-md  transition-colors"
         >
           Get in Touch
         </button>

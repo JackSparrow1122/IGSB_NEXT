@@ -55,7 +55,7 @@ const HeroSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[70vh] overflow-hidden">
+    <div className="relative w-full min-h-[70vh] h-[70vh] overflow-hidden isolate">
       {/* ---------------- DESKTOP SLIDER ---------------- */}
       <div className="hidden md:block relative w-full h-full">
         {[...desktopImages, desktopImages[0]].map((img, i) => (
