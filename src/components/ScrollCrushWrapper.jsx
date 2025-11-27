@@ -13,43 +13,46 @@ export default function ScrollCrushWrapper({ Hero, children }) {
     const hero = heroRef.current;
     if (!hero) return;
 
-    const originalHeight = hero.offsetHeight;
+    const heroHeight = hero.offsetHeight;
 
-    gsap.fromTo(
+    // Safe ScrollTrigger
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: hero,
+        start: "top top",
+        end: "+=600",           // 🔥 FIXED LENGTH (prevents collapsing)
+        scrub: true,
+        pin: true,
+        pinSpacing: false,
+      },
+    });
+
+    tl.fromTo(
       hero,
-      { height: originalHeight },
-      {
-        height: originalHeight * 0.45,  // crush more for full effect
-        ease: "none",
-        scrollTrigger: {
-          trigger: hero,
-          scroller: document.body,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-          pin: true,
-          pinSpacing: false,
-        },
-      }
+      { height: heroHeight },
+      { height: heroHeight * 0.45, ease: "none" }
     );
+
+    // ❗ Force recalculation when images finish loading
+    window.addEventListener("load", () => {
+      ScrollTrigger.refresh();
+    });
+
+    return () => {
+      tl.scrollTrigger?.kill();
+      tl.kill();
+    };
   }, []);
 
   return (
     <div className="relative">
-      {/* FULL-WIDTH HERO — no rounding, no shadow */}
-      <div
-        ref={heroRef}
-        className=" w-full"
-        style={{
-          borderRadius: "0px",
-          boxShadow: "none",
-        }}
-      >
+      <div ref={heroRef} className="w-full">
         {Hero}
       </div>
 
-      {/* Push Explore Section down a little */}
-      <div className="relative z-20 pt-5">{children}</div>
+      <div className="relative z-20 pt-5">
+        {children}
+      </div>
     </div>
   );
 }
