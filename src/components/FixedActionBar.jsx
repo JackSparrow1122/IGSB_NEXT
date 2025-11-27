@@ -30,7 +30,7 @@ const FixedActionBar = () => {
               title="Menu"
               className="relative flex items-center justify-center bg-[#e69a38] text-white p-4 rounded-md shadow-lg hover:brightness-110 transition-all duration-300"
             >
-              <Menu size={22} />
+              <LayoutGrid size={22} />
             </button>
           </div>
 

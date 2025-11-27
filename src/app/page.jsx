@@ -9,6 +9,7 @@ import EnergyInnovation from "@/components/home/EnergyInnovation";
 import CollegeUnplugged from "@/components/home/CollegeUnplugged";
 import EventsSection from "@/components/home/EventSection";
 import CTASection from "@/components/home/CTASection";
+import InstagramMosaic from "@/components/home/InstagramMosaic";
 
 export default function HomePage() {
   return (
@@ -21,8 +22,9 @@ export default function HomePage() {
         <EnergyInnovation />
         <CollegeUnplugged />
         <EventsSection />
-        {/* <CTASection /> */}
+        <CTASection />
       </ScrollCrushWrapper>
+      <InstagramMosaic />
     </div>
   );
 }

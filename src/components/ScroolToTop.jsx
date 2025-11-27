@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-// import { ChevronUp } from "lucide-react";
-import { ArrowUp } from "lucide-react";
+import { ChevronUp } from "lucide-react";
+// import { ArrowUp } from "lucide-react";
 // import { MoveUp } from "lucide-react";
 
 
@@ -34,7 +34,7 @@ export default function ScrollToTop({ lenis }) {
         ${show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4 pointer-events-none"}
       `}
     >
-      <ArrowUp size={22} />
+      <ChevronUp size={22} />
     </button>
   );
 }

@@ -45,7 +45,7 @@ export default function CTASection() {
   const { headline, body } = pageContent[pathname] || pageContent["/"];
 
   return (
-    <section className=" bg-secondary text-center text-white py-16 px-6   mx-auto my-16 shadow-lg">
+    <section className=" bg-secondary text-center text-white py-16 px-6   mx-auto  shadow-lg">
       <h2 className="text-2xl sm:text-3xl font-bold mb-4">{headline}</h2>
       <p className="text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed text-sm sm:text-base">
         {body}
@@ -54,18 +54,31 @@ export default function CTASection() {
       {/* ✅ Buttons */}
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <button
-          onClick={handleBrochureDownload}
-          className="bg-white text-[#002D72] font-semibold px-8 py-3 rounded-md hover:bg-gray-100 transition-colors"
-        >
-          Download Brochure
-        </button>
+  onClick={handleBrochureDownload}
+  className="
+    bg-white text-[#002D72] font-semibold px-8 py-3 rounded-md 
+    transition-all duration-300 
+    hover:bg-gray-100 
+    hover:shadow-lg 
+    hover:-translate-y-1
+  "
+>
+  Download Brochure
+</button>
 
-        <button
-          onClick={handleScrollToForm}
-          className="bg-white text-[#002D72] font-semibold px-8 py-3 hover:bg-gray-100 rounded-md  transition-colors"
-        >
-          Get in Touch
-        </button>
+<button
+  onClick={handleScrollToForm}
+  className="
+    bg-white text-[#002D72] font-semibold px-8 py-3 rounded-md 
+    transition-all duration-300 
+    hover:bg-gray-100 
+    hover:shadow-lg 
+    hover:-translate-y-1
+  "
+>
+  Get in Touch
+</button>
+
       </div>
     </section>
   );

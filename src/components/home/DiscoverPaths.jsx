@@ -62,8 +62,8 @@ const DiscoverPaths = () => {
       {
         autoAlpha: 1,
         y: 0,
-        duration: 1.2,
-        ease: "power3.out",
+        duration: 0.8,
+        ease: "power2.out",
         scrollTrigger: {
           trigger: sec,
           start: "top 85%",
@@ -75,11 +75,11 @@ const DiscoverPaths = () => {
     // Cards stagger animation
     gsap.fromTo(
       sec.querySelectorAll(".fade-card"),
-      { autoAlpha: 0, y: 60 },
+      { autoAlpha: 0, y: 40 },
       {
         autoAlpha: 1,
         y: 0,
-        duration: 1,
+        duration: 0.25,
         ease: "power3.out",
         stagger: 0.25,
         scrollTrigger: {
