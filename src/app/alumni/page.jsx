@@ -746,7 +746,6 @@ The meet was insightful, engaging, and productive with exchange of ideas, feedba
             )}
 
             {/* ✅ Alumni Achievements */}
-            {/* ✅ Alumni Achievements */}
             {activeTab === "achievements" && (
               <div className="space-y-10">
                 <h2 className="text-3xl font-bold text-secondary text-center">

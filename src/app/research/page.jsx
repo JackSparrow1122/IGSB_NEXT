@@ -28,7 +28,7 @@ export default function Research() {
             className="object-cover"
           />
         </div>
-        <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 space-y-16">
+        <div className="max-w-7xl mx-auto  px-4 sm:px-6 lg:px-8 ">
           {/* ===========================
               🔷 PAGE HEADER
           ============================ */}
@@ -47,7 +47,7 @@ export default function Research() {
           ============================ */}
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              { id: "researchCentre", label: "IGSB Research Centre" },
+              // { id: "researchCentre", label: "IGSB Research Centre" },
               { id: "mdp", label: "MDP" },
               { id: "fdp", label: "FDP" },
               { id: "research", label: "Research" },
@@ -975,23 +975,26 @@ export default function Research() {
                   <h2 className="text-2xl font-bold text-secondary text-center">
                     Session Chair — International Conference (Tashkent)
                   </h2>
+                  <div className="flex justify-between items-center gap-5">
+                    <p className="text-gray-700 text-justify">
+                      Dr. Priyanka Darekar served as a Session Chair at 4th
+                      International Conference on Technological Advancements in
+                      Computational Sciences, Amity University, Tashkent City,
+                      Street Labzak, Building-70, 100028, Uzbekistan. She
+                      facilitated the scholarly presentations and discussions,
+                      and contributing to the smooth conduct of the
+                      international academic event.
+                    </p>
 
-                  <p className="text-gray-700 text-justify">
-                    Dr. Priyanka Darekar served as a Session Chair at 4th
-                    International Conference on Technological Advancements in
-                    Computational Sciences, Amity University, Tashkent City,
-                    Street Labzak, Building-70, 100028, Uzbekistan. She
-                    facilitated the scholarly presentations and discussions, and
-                    contributing to the smooth conduct of the international
-                    academic event.
-                  </p>
-
-                  <div className="w-full h-auto rounded-2xl overflow-hidden shadow">
-                    <img
-                      src="/IGSB/Research/ResourcePerson/1RP.png"
-                      alt="Session Chair Tashkent"
-                      className="w-full h-full object-cover"
-                    />
+                    <div className="w-full h-auto rounded-2xl overflow-hidden shadow">
+                      <Image
+                        src="/placeholder.jpg"
+                        height={720}
+                        width={1280}
+                        className="w-full h-full object-cover bg-gray-400"
+                        alt="Session Chain Tashkent"
+                      ></Image>
+                    </div>
                   </div>
                 </section>
 
@@ -1013,12 +1016,25 @@ export default function Research() {
                     {[1, 2, 3, 4, 5].map((i) => (
                       <div
                         key={i}
-                        className="h-48 rounded-xl overflow-hidden shadow"
+                        // Ensure the parent enforces the shape
+                        className="relative h-48 rounded-xl overflow-hidden shadow"
                       >
-                        <img
+                        <Image
                           src={`/IGSB/Research/ResourcePerson/2RP${i}.jpeg`}
                           alt={`FDP Resource Person ${i}`}
+                          // 1. Set explicit width/height (keep this as you had it, it helps aspect ratio)
+                          height={720}
+                          width={1280}
+                          // 2. IMPORTANT: Tell Next.js how wide the image actually is in the viewport
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          // 3. Optional: Bump quality if it looks compressed
+                          quality={85}
+                          // 4. Styles
                           className="w-full h-full object-cover"
+
+                          // 5. Debugging (Optional): If it STILL looks bad, uncomment the line below.
+                          // If this fixes it, the issue is definitely Next.js optimization logic.
+                          // unoptimized={true}
                         />
                       </div>
                     ))}
