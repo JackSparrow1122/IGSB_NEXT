@@ -10,19 +10,24 @@ import CollegeUnplugged from "@/components/home/CollegeUnplugged";
 import EventsSection from "@/components/home/EventSection";
 import CTASection from "@/components/home/CTASection";
 import InstagramMosaic from "@/components/home/InstagramMosaic";
+import NewDiscover from "@/components/home/newDiscover";
+
 
 export default function HomePage() {
   return (
     <div className="bg-white text-gray-900">
       <ScrollCrushWrapper Hero={<HeroSlider />}>
         <ExploreSection />
+        <NewDiscover />
+
         <DiscoverPaths />
         <AcademicYearSection />
         <RecruitersSection />
         <EnergyInnovation />
-        <CollegeUnplugged />
+        {/* <CollegeUnplugged /> */}
         <EventsSection />
         <CTASection />
+        
       </ScrollCrushWrapper>
       <InstagramMosaic />
     </div>

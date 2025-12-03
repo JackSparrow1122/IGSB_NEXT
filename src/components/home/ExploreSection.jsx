@@ -11,7 +11,6 @@ const ExploreSection = () => {
   const sectionRef = useRef(null);
 
   const logos = [
-    { title: "NAAC Accredited", img: "/NAAC.webp" },
     { title: "Approved by AICTE", img: "/AICTE.webp" },
     { title: "Affiliated to SPPU Pune", img: "/SPPU.webp" },
   ];

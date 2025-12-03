@@ -7,54 +7,6 @@ import { HiMenuAlt2, HiX } from "react-icons/hi";
 import { TbExternalLink } from "react-icons/tb";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
-const Navbar = () => {
-  const [isHelplineOpen, setIsHelplineOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [mobileDropdown, setMobileDropdown] = useState(null);
-
-  // ✅ Refs to manage hover timers and outside clicks (no flicker)
-  const dropdownTimeoutRef = useRef(null);
-  const navbarRef = useRef(null);
-
-  const toggleHelpline = () => setIsHelplineOpen(!isHelplineOpen);
-  const toggleModal = () => setIsModalOpen(!isModalOpen);
-  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
-
-  // === Hover Handlers (fixed flicker) ===
-  const handleMouseEnter = (dropdownName) => {
-    if (dropdownTimeoutRef.current) {
-      clearTimeout(dropdownTimeoutRef.current);
-      dropdownTimeoutRef.current = null;
-    }
-    setActiveDropdown(dropdownName);
-  };
-
-  const handleMouseLeave = () => {
-    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
-    dropdownTimeoutRef.current = setTimeout(() => {
-      setActiveDropdown(null);
-    }, 180);
-  };
-
-  // === Close dropdown if click outside ===
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
-        setActiveDropdown(null);
-      }
-    };
-    document.addEventListener("pointerdown", handleClickOutside);
-    return () => {
-      document.removeEventListener("pointerdown", handleClickOutside);
-      if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
-    };
-  }, []);
-
-  const toggleMobileDropdown = (dropdownName) => {
-    setMobileDropdown(mobileDropdown === dropdownName ? null : dropdownName);
-  };
 
   const dropdownContent = {
     aboutUs: {
@@ -68,10 +20,10 @@ const Navbar = () => {
               link: "/about/chanakya-edu#about-sces",
             },
 
-            {
-              label: "Indira Group of Institutes ",
-              link: "/about/chanakya-edu#about-campus",
-            },
+            // {
+            //   label: "Indira Group of Institutes ",
+            //   link: "/about/chanakya-edu#about-campus",
+            // },
             {
               label: "Indira Global School of Business",
               link: "/about/chanakya-edu#about-igsb",
@@ -277,25 +229,75 @@ const Navbar = () => {
     },
   };
 
+const Navbar = () => {
+  const [isHelplineOpen, setIsHelplineOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileDropdown, setMobileDropdown] = useState(null);
+
+  // ✅ Refs to manage hover timers and outside clicks (no flicker)
+  const dropdownTimeoutRef = useRef(null);
+  const navbarRef = useRef(null);
+
+  const toggleHelpline = () => setIsHelplineOpen(!isHelplineOpen);
+  const toggleModal = () => setIsModalOpen(!isModalOpen);
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
+
+  // === Hover Handlers (fixed flicker) ===
+  const handleMouseEnter = (dropdownName) => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current);
+      dropdownTimeoutRef.current = null;
+    }
+    setActiveDropdown(dropdownName);
+  };
+
+  const handleMouseLeave = () => {
+    if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setActiveDropdown(null);
+    }, 180);
+  };
+
+  // === Close dropdown if click outside ===
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+        setActiveDropdown(null);
+      }
+    };
+    document.addEventListener("pointerdown", handleClickOutside);
+    return () => {
+      document.removeEventListener("pointerdown", handleClickOutside);
+      if (dropdownTimeoutRef.current) clearTimeout(dropdownTimeoutRef.current);
+    };
+  }, []);
+
+  const toggleMobileDropdown = (dropdownName) => {
+    setMobileDropdown(mobileDropdown === dropdownName ? null : dropdownName);
+  };
+
+
   const renderDropdownContent = (content) => (
-    <div className="max-w-8xl px-8 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 animate-in fade-in-0 zoom-in-95 duration-300 ">
+    <div className="max-w-8xl px-8 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 animate-in fade-in-0 zoom-in-95 duration-300 bg-secondary">
       {content.sections.map((section, index) => (
         <div key={index}>
           {section.title ? (
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            <h3 className="text-lg font-semibold text-gray-100 mb-4">
               {section.title}
             </h3>
           ) : null}
-          <ul className="space-y-4 text-gray-900 text-sm">
+          <ul className="space-y-4 text-gray-200 text-sm">
             {section.items.map((item, itemIndex) => (
               <li
                 key={itemIndex}
-                className="flex justify-between items-center border-b border-black pb-2 group"
+                className="flex justify-between items-center border-b border-white pb-2 group"
               >
                 {item.link ? (
                   <Link
                     href={item.link}
-                    className="font-semibold flex justify-between items-center w-full text-gray-900 hover:text-primary transition-all duration-200 group-hover:translate-x-1"
+                    className="font-semibold flex justify-between items-center w-full text-gray-200 hover:text-primary transition-all duration-200 group-hover:translate-x-1"
                     onClick={() => setActiveDropdown(null)}
                   >
                     <span>{item.label || item}</span>
@@ -359,13 +361,13 @@ const Navbar = () => {
       {/* ===== NAVBAR ===== */}
       <nav
         ref={navbarRef}
-        className="w-full h-[12vh] flex bg-secondary text-gray-100 shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
+        className="w-full h-[12vh] flex bg-white text-secondary shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
       >
         {/* Left: Logo - 80% width on mobile */}
         <div className="w-full md:w-[30%] h-full flex items-center justify-start md:pl-0 md:justify-center">
           <Link href="/">
             <Image
-              src="/IGSB_logo_white.png"
+              src="/Logo.png"
               alt="Logo"
               height={300}
               width={300}
@@ -390,7 +392,7 @@ const Navbar = () => {
                 >
                   Pay Fee
                 </a>
-                <span className="text-gray-400">|</span>
+                <span className="text-secondary">|</span>
                 <a
                   href="http://220.226.204.21/login.aspx/"
                   target="_blank"
@@ -399,7 +401,7 @@ const Navbar = () => {
                 >
                   ERP Login
                 </a>
-                <span className="text-gray-400">|</span>
+                <span className="text-secondary">|</span>
                 <a
                   href="https://app.joinsuperset.com/join/#/signup/student/placements/621c7653-bdeb-4ee2-bb72-765e5d1d9635"
                   target="_blank"
@@ -408,19 +410,19 @@ const Navbar = () => {
                 >
                   Superset
                 </a>
-                <span className="text-gray-400">|</span>
+                <span className="text-secondary">|</span>
                 <a
                   href="https://lc-icem-sumedh.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-secondary transition-colors duration-200"
+                  className="hover:text-primary transition-colors duration-200"
                 >
                   Leaving Certificate
                 </a>
-                <span className="text-gray-400">|</span>
+                <span className="text-secondary">|</span>
                 <Link
                   href="/contact"
-                  className="hover:text-secondary transition-colors duration-200"
+                  className="hover:text-primary "
                 >
                   Contact Us
                 </Link>
@@ -429,7 +431,7 @@ const Navbar = () => {
               <div className="flex">
                 <button
                   onClick={toggleModal}
-                  className="bg-[#e69a38] text-gray-50 px-8 rounded-bl-lg text-sm font-semibold relative overflow-hidden transition-all duration-300"
+                  className="bg-secondary text-gray-50 px-8 rounded-bl-lg text-sm font-semibold relative overflow-hidden transition-all duration-300"
                 >
                   <span>Enquire Now</span>
                 </button>
@@ -481,12 +483,12 @@ const Navbar = () => {
             >
               Placement
             </Link>
-            <Link
+            {/* <Link
               href="/nism"
               className="hover:text-secondary  px-5  transition-colors duration-200 group"
             >
               NISM
-            </Link>
+            </Link> */}
             <Link
               href="/alumni"
               className="hover:text-secondary  px-5  transition-colors duration-200 group"

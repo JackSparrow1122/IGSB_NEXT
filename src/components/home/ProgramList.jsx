@@ -17,7 +17,7 @@ const ProgramList = () => {
 
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
-        ACADEMIC <span className="text-secondary">YEAR 2026</span>
+        ACADEMIC <span className="text-secondary">YEAR 2026-27</span>
       </h2>
 
       {/* Programs List */}

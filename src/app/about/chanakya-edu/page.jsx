@@ -144,6 +144,65 @@ const ChanakyaEdu = () => {
           </div>
         </section>
 
+        <section id="about-vision" className="relative scroll-mt-[15vh]">
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
+            <h2 className="text-3xl font-bold text-secondary mb-6">
+              Vision
+            </h2>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              "Indira Global School of Business will be a preferred center of
+                academic excellence for developing dynamic management
+                practitioners who will be globally competent and socially
+                responsible business leaders with a purpose driven life."
+            </p>
+          </div>
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
+            <h2 className="text-3xl font-bold text-secondary mb-6">
+              Mission
+            </h2>
+            <p className="text-gray-700 leading-relaxed text-lg">
+              To mentor budding managers, global business leaders and
+                  encourage entrepreneurs by promoting a learning environment to
+                  create and lead sustainable business.
+
+              To enable stakeholders to cultivate strategic alliance that
+                  promote cross-cultural, social sensitivity, academic
+                  excellence, research and consultancy aimed at attaining
+                  comprehensive development.
+            </p>
+          </div>
+        </section>
+
+           <section id="about-vision" className="space-y-8 scroll-mt-[15vh]">
+  
+          {/* Values */}
+          {/* <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
+            <div className="bg-secondary text-white px-8 py-6">
+              <h2 className="text-2xl font-bold">Values</h2>
+            </div>
+            <div className="px-8 py-8 space-y-6">
+              {[
+                "Integrity: Conduct ourselves in a fair, honest and transparent manner.",
+                "Passion: We work with an incomparable passion to make a positive change towards a holistic and wholesome life.",
+                "Environment Sensitivity: We aim to protect and promote environmental sustainability.",
+                "Social Sensitivity: We stay compassionate to the lesser privileged in society.",
+                "Excellence: Aim to be outstanding, brilliant and at par with global standards in all our undertakings",
+              ].map((value, index) => (
+                <div key={index} className="flex items-start gap-4">
+                  <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                    <span className="text-white font-bold text-sm">
+                      {index + 1}
+                    </span>
+                  </div>
+                  <p className="text-gray-700 leading-relaxed text-lg">
+                    {value}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div> */}
+        </section>
+
         {/* Board of Trustees Section */}
         <section id="about-trustees" className="relative scroll-mt-[15vh]">
           <div className="bg-white p-8 rounded-xl shadow-lg">
@@ -184,14 +243,13 @@ const ChanakyaEdu = () => {
         </section>
 
         {/* Campus Experience / Additional Info Section */}
-        <section id="about-campus" className="relative scroll-mt-[15vh]">
+        {/* <section id="about-campus" className="relative scroll-mt-[15vh]">
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <h2 className="text-3xl font-bold text-secondary mb-6">
               About Indira Group of Institutes (IGI)
             </h2>
 
-            {/* Text Block */}
-            {/* Text Block */}
+          
             <div className="text-gray-700 leading-relaxed text-lg space-y-6 mb-10">
               <p>
                 Established in 1994 under the visionary guidance of{" "}
@@ -269,9 +327,9 @@ const ChanakyaEdu = () => {
               </p>
             </div>
 
-            {/* Images */}
+         
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* IGBS */}
+              
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
                 <Image
                   src="/IGSB.jpg"
@@ -287,7 +345,7 @@ const ChanakyaEdu = () => {
                 </div>
               </div>
 
-              {/* ICEM */}
+          
               <div className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
                 <Image
                   src="/ICEM.jpg"
@@ -304,7 +362,7 @@ const ChanakyaEdu = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Chairperson Section */}
         <section id="about-chairperson" className="relative scroll-mt-[15vh]">
@@ -350,9 +408,49 @@ const ChanakyaEdu = () => {
             </div>
           </div>
         </section>
-
         {/* Directors Profile Section */}
         <section id="about-director" className="relative scroll-mt-[15vh]">
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <h2 className="text-3xl font-bold text-secondary mb-10">
+              Director's Profile  – Message
+            </h2>
+
+            <div className="flex flex-col lg:flex-row items-start gap-12 bg-white p-8 rounded-xl border border-gray-100">
+              <div className="lg:w-2/5 w-full">
+                <div className="relative rounded-2xl overflow-hidden shadow-lg">
+                  <Image
+                    src="/banners/Dr-Virendra-Tatake.jpg"
+                    alt="Dr. Virendra Tatake"
+                    width={500}
+                    height={600}
+                    className="w-full h-auto object-contain rounded-2xl"
+                  />
+                </div>
+              </div>
+
+              <div className="lg:w-3/5 w-full">
+                <div className="border-l-4 border-secondary pl-6 mb-6">
+                  <h3 className="text-2xl font-bold text-secondary mb-1">
+                    DR. VIRENDRA TATAKE
+                  </h3>
+                  <p className="text-secondary font-semibold text-lg mb-2">
+                    DIRECTOR
+                  </p>
+                  <p className="text-gray-700 font-semibold">
+                    INDIRA Global School of Business, PUNE
+                  </p>
+                </div>
+
+                <p className="text-gray-700 italic leading-relaxed text-lg">
+                  Content Coming Soon  <span></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Directors Profile Section */}
+        {/* <section id="about-director" className="relative scroll-mt-[15vh]">
           <div className="bg-secondary text-white py-8 px-8 rounded-t-2xl">
             <h2 className="text-3xl font-bold">Directors Profile</h2>
           </div>
@@ -399,7 +497,7 @@ const ChanakyaEdu = () => {
               </div>
             </div>
 
-            {/* Tabs Navigation */}
+            
             <div className="mt-12 border-b border-gray-200">
               <div className="flex flex-wrap gap-2">
                 {tabs.map((tab) => (
@@ -418,7 +516,7 @@ const ChanakyaEdu = () => {
               </div>
             </div>
 
-            {/* Tab Content */}
+           
             <div className="py-8">
               {activeTab === "Research" && (
                 <div className="space-y-8">
@@ -682,11 +780,11 @@ const ChanakyaEdu = () => {
               )}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Vision & Mission Section */}
-        <section id="about-vision" className="space-y-8 scroll-mt-[15vh]">
-          {/* Vision */}
+        {/* <section id="about-vision" className="space-y-8 scroll-mt-[15vh]">
+   
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
             <div className="bg-secondary text-white px-8 py-6">
               <h2 className="text-2xl font-bold">Vision</h2>
@@ -701,7 +799,7 @@ const ChanakyaEdu = () => {
             </div>
           </div>
 
-          {/* Mission */}
+       
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
             <div className="bg-secondary text-white px-8 py-6">
               <h2 className="text-2xl font-bold">Mission</h2>
@@ -731,7 +829,7 @@ const ChanakyaEdu = () => {
             </div>
           </div>
 
-          {/* Values */}
+   
           <div className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100">
             <div className="bg-secondary text-white px-8 py-6">
               <h2 className="text-2xl font-bold">Values</h2>
@@ -757,7 +855,7 @@ const ChanakyaEdu = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Recognition / Affiliation Section */}
         <section id="about-recognition" className="relative scroll-mt-[15vh]">

@@ -48,6 +48,11 @@ const DiscoverPaths = () => {
       img: "/MBA4.jpg",
       link: "/programs/mba",
     },
+    {
+      name: "Business Analytics",
+      img: "/MBA4.jpg",
+      link: "/programs/mba",
+    },
   ];
 
   // === GSAP Animations ===
@@ -110,7 +115,7 @@ const DiscoverPaths = () => {
           </div>
 
           {/* Grid */}
-          <div className="cards-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          <div className="cards-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {courses.map((course, index) => (
               <Link
                 key={index}
@@ -146,6 +151,8 @@ const DiscoverPaths = () => {
           </div>
         </div>
       </div>
+
+
     </>
   );
 };
