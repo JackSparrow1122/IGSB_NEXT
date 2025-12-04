@@ -85,18 +85,17 @@ const DiscoverSection = () => {
               {/* Main Card */}
               <div
                 className="
-                  relative z-10 p-5 rounded-xl 
-                  bg-white/90 backdrop-blur-xl 
-                  border border-white/15 
-                  shadow-[0_8px_35px_rgba(0,0,0,0.45)]
-                  
-                  transition-all duration-300
-                  group-hover:-translate-y-2 group-hover:-translate-x-2 
-                  group-hover:shadow-xl
-                  
-                  flex flex-col
-                  h-[500px]
-                "
+  relative z-10 p-5 rounded-xl 
+  bg-white/90 group-hover:bg-[#A7F3D0]/90 backdrop-blur-xl 
+  border border-white/15 
+  shadow-[0_8px_35px_rgba(0,0,0,0.45)]
+  transition-all duration-300
+  group-hover:-translate-y-2 group-hover:-translate-x-2 
+  group-hover:shadow-xl
+  flex flex-col
+  h-[500px]
+"
+
               >
                 <Image
                   src={card.image}

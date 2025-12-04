@@ -297,6 +297,11 @@ export default function MBAContent() {
         </div>
       </div>
 
+
+      <div ref={faqRef}>
+        <FAQSection />
+      </div>
+
       {/* =======================
           MBA SPECIALIZATION TABS
       ======================= */}
@@ -425,9 +430,7 @@ export default function MBAContent() {
       <RecruitersSection />
       <CTASection />
 
-      <div ref={faqRef}>
-        <FAQSection />
-      </div>
+      
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/30 backdrop-blur-sm flex justify-center items-center z-[60] animate-in fade-in-0 duration-300">

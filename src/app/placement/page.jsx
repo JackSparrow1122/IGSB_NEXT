@@ -25,7 +25,7 @@ export default function Placement() {
         <CASsection />
         <Upskilling />
         <PlacementRecords />
-        <PlacementOrientation />
+        {/* <PlacementOrientation /> */}
         <PlacementIndustryVisit />
         <PlacementCell />
       </ScrollCrushWrapper>

@@ -7,227 +7,241 @@ import { HiMenuAlt2, HiX } from "react-icons/hi";
 import { TbExternalLink } from "react-icons/tb";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
+const dropdownContent = {
+  aboutUs: {
+    title: "About Us",
+    sections: [
+      {
+        title: "About Us",
+        items: [
+          {
+            label: "Shree Chanakya Education Society",
+            link: "/about/chanakya-edu#about-sces",
+          },
 
-  const dropdownContent = {
-    aboutUs: {
-      title: "About Us",
-      sections: [
-        {
-          title: "About Us",
-          items: [
-            {
-              label: "Shree Chanakya Education Society",
-              link: "/about/chanakya-edu#about-sces",
-            },
+          // {
+          //   label: "Indira Group of Institutes ",
+          //   link: "/about/chanakya-edu#about-campus",
+          // },
+          {
+            label: "Indira Global School of Business",
+            link: "/about/chanakya-edu#about-igsb",
+          },
+          {
+            label: "Chairperson's Profile & Chief Mentor-IGI",
+            link: "/about/chanakya-edu#about-chairperson",
+          },
+          {
+            label: "Director's Profile",
+            link: "/about/chanakya-edu#about-director",
+          },
+          {
+            label: "Vision Mission & Values",
+            link: "/about/chanakya-edu#about-vision",
+          },
+          {
+            label: "Recognition / Affiliation",
+            link: "/about/chanakya-edu#about-recognition",
+          },
+          {
+            label: "Human Capital / Intellectual Capital",
+            link: "/",
+          },
+          {
+            label: "Facilities",
+            link: "/facilities",
+          },
+        ],
+      },
+      
+      {
+        title: "Governance",
+        items: [
+          {
+            label: "Board of Governance",
+            link: "/about/governance",
+          },
 
-            // {
-            //   label: "Indira Group of Institutes ",
-            //   link: "/about/chanakya-edu#about-campus",
-            // },
-            {
-              label: "Indira Global School of Business",
-              link: "/about/chanakya-edu#about-igsb",
-            },
-            {
-              label: "Chairperson's Profile & Chief Mentor-IGI",
-              link: "/about/chanakya-edu#about-chairperson",
-            },
-            {
-              label: "Director's Profile",
-              link: "/about/chanakya-edu#about-director",
-            },
-            {
-              label: "Vision Mission & Values",
-              link: "/about/chanakya-edu#about-vision",
-            },
-            {
-              label: "Recognition / Affiliation",
-              link: "/about/chanakya-edu#about-recognition",
-            },
-          ],
-        },
-        {
-          title: "Governance",
-          items: [
-            {
-              label: "Board of Governance",
-              link: "/about/governance",
-            },
+          {
+            label: "Committee's",
+            link: "/about/committee",
+          },
+          {
+            label: "Cell's",
+            link: "/about/cell",
+          },
+          {
+            label: "Research & Consultancy",
+            link: "/about/Research",
+          },
+          {
+            label: "Institutions Innovation Council (IIC)",
+            link: "/about/IIC",
+          },
+          {
+            label: "Mandatory Disclosure",
+            link: "/",
+          },
+        ],
+      },
+      {
+        title: "Student Committees",
+        items: [
+          {
+            label: "Student Grievance Redressal Committee",
+            link: "/campus-life/student-committees#student-grievance-redressal-committee",
+          },
+          {
+            label: "Anti Ragging Committee",
+            link: "/campus-life/student-committees#anti-ragging-committee",
+          },
+          {
+            label: "Anti Ragging Squad",
+            link: "/campus-life/student-committees#anti-ragging-squad",
+          },
+          {
+            label: "Student Welfare Council",
+            link: "/campus-life/student-committees#students-welfare-council",
+          },
+          {
+            label: "Student Counsellor",
+            link: "/campus-life/student-committees#student-counsellor",
+          },
+          // {
+          //   label: "Event Committee",
+          //   link: "/campus-life/student-committees#event-committee", // If needed later
+          // },
+          {
+            label: "Online Grievance Redressal Mechanism",
+            link: `https://forms.office.com/pages/responsepage.aspx?id=Q_oIpAgyHUCWj_ew96nH5GqgRKaPsvhHsV5PWUUqBe1UQzlUNDZDTE0zMlZUTjVCUU40VjAwUFU3Qy4u`, // If added later
+          },
+        ],
+      },
+      
+    ],
+  },
 
-            {
-              label: "Committee's",
-              link: "/about/committee",
-            },
-            {
-              label: "Cell's",
-              link: "/about/cell",
-            },
-            {
-              label: "Research & Consultancy",
-              link: "/about/Research",
-            },
-            {
-              label: "Institutions Innovation Council (IIC)",
-              link: "/about/IIC",
-            },
-          ],
-        },
-      ],
-    },
+  campusLife: {
+    title: "Campus Life",
+    sections: [
+      {
+        title: "Events & Activities",
+        items: [
+          {
+            label: "Students Engagement",
+            link: "/campus-life/student-engagement",
+          },
+          {
+            label: "Students Certifications",
+            link: "/campus-life/student-certifications",
+          },
+          {
+            label: "Student Induction",
+            link: "/campus-life/student-induction",
+          },
+          {
+            label: "Student Achievements",
+            link: "/campus-life/student-achievements",
+          },
+          // {
+          //   label: "Industry Institution Interaction",
+          //   link: "/campus-life/icem-awards",
+          // },
+          // {
+          //   label: "Professional Associations",
+          //   link: "/campus-life/academics",
+          // },
+        ],
+      },
+    
+    ],
+  },
+  programs: {
+    title: "Programs & Admission",
+    sections: [
+      {
+        title: "MBA",
+        items: [
+          {
+            label: "Marketing Management",
+            link: "/programs/mba?spec=marketing",
+          },
+          {
+            label: "Finance Management",
+            link: "/programs/mba?spec=finance",
+          },
+          {
+            label: "Human Resource Management",
+            link: "/programs/mba?spec=hr",
+          },
+          {
+            label: "Operations & Supply Chain Management",
+            link: "/programs/mba?spec=operations",
+          },
+          {
+            label: "Human Capital/ Intellectual Capital",
+            link: "/programs/mba",
+          },
+        ],
+      },
+      {
+        title: "PHD",
+        items: [{ label: "Research Center", link: "/programs/phd" }],
+      },
+    ],
+  },
 
-    campusLife: {
-      title: "Campus Life",
-      sections: [
-        {
-          title: "Events & Activities",
-          items: [
-            {
-              label: "Students Engagement",
-              link: "/campus-life/student-engagement",
-            },
-            {
-              label: "Students Certifications",
-              link: "/campus-life/student-certifications",
-            },
-            {
-              label: "Student Induction",
-              link: "/campus-life/student-induction",
-            },
-            {
-              label: "Student Achievements",
-              link: "/campus-life/student-achievements",
-            },
-            // {
-            //   label: "Industry Institution Interaction",
-            //   link: "/campus-life/icem-awards",
-            // },
-            // {
-            //   label: "Professional Associations",
-            //   link: "/campus-life/academics",
-            // },
-          ],
-        },
-        {
-          title: "Student Committees",
-          items: [
-            {
-              label: "Student Grievance Redressal Committee",
-              link: "/campus-life/student-committees#student-grievance-redressal-committee",
-            },
-            {
-              label: "Anti Ragging Committee",
-              link: "/campus-life/student-committees#anti-ragging-committee",
-            },
-            {
-              label: "Anti Ragging Squad",
-              link: "/campus-life/student-committees#anti-ragging-squad",
-            },
-            {
-              label: "Student Welfare Council",
-              link: "/campus-life/student-committees#students-welfare-council",
-            },
-            {
-              label: "Student Counsellor",
-              link: "/campus-life/student-committees#student-counsellor",
-            },
-            // {
-            //   label: "Event Committee",
-            //   link: "/campus-life/student-committees#event-committee", // If needed later
-            // },
-            {
-              label: "Online Grievance Redressal Mechanism",
-              link: `https://forms.office.com/pages/responsepage.aspx?id=Q_oIpAgyHUCWj_ew96nH5GqgRKaPsvhHsV5PWUUqBe1UQzlUNDZDTE0zMlZUTjVCUU40VjAwUFU3Qy4u`, // If added later
-            },
-          ],
-        },
-      ],
-    },
-    programs: {
-      title: "Programs & Admission",
-      sections: [
-        {
-          title: "MBA",
-          items: [
-            {
-              label: "Marketing Management",
-              link: "/programs/mba?spec=marketing",
-            },
-            {
-              label: "Finance Management",
-              link: "/programs/mba?spec=finance",
-            },
-            {
-              label: "Human Resource Management",
-              link: "/programs/mba?spec=hr",
-            },
-            {
-              label: "Operations & Supply Chain Management",
-              link: "/programs/mba?spec=operations",
-            },
-            {
-              label: "Human Capital/ Intellectual Capital",
-              link: "/programs/mba",
-            },
-          ],
-        },
-        {
-          title: "PHD",
-          items: [{ label: "Research Center", link: "/programs/phd" }],
-        },
-      ],
-    },
+  placement: {
+    title: "Placement",
+    sections: [
+      {
+        items: [
+          "Placement Team",
+          "Our Recruiters",
+          "Placed Students",
+          "Placement Policy",
+        ],
+      },
+    ],
+  },
 
-    placement: {
-      title: "Placement",
-      sections: [
-        {
-          items: [
-            "Placement Team",
-            "Our Recruiters",
-            "Placed Students",
-            "Placement Policy",
-          ],
-        },
-      ],
-    },
-
-    accreditation: {
-      title: "Accreditation",
-      sections: [
-        {
-          title: "NAAC",
-          items: [
-            "SSR reports year wise",
-            "Criteria wise Details",
-            "AQAR reports",
-            "NAAC Certificate",
-          ],
-        },
-        {
-          title: "IQAC",
-          items: [
-            "IQAC Committee",
-            "IQAC Notices",
-            "MOMS & Actions",
-            "IQAC Formats",
-            "Best Practices",
-            "Distinctive Practice",
-          ],
-        },
-        {
-          title: "Reports & Others",
-          items: [
-            "SPPU Annual Report",
-            "Code of Conduct",
-            "NIRF",
-            "Financial Statements",
-            "Soft Skills & Aptitude",
-            "Reports",
-          ],
-        },
-      ],
-    },
-  };
+  accreditation: {
+    title: "Accreditation",
+    sections: [
+      {
+        title: "NAAC",
+        items: [
+          "SSR reports year wise",
+          "Criteria wise Details",
+          "AQAR reports",
+          "NAAC Certificate",
+        ],
+      },
+      {
+        title: "IQAC",
+        items: [
+          "IQAC Committee",
+          "IQAC Notices",
+          "MOMS & Actions",
+          "IQAC Formats",
+          "Best Practices",
+          "Distinctive Practice",
+        ],
+      },
+      {
+        title: "Reports & Others",
+        items: [
+          "SPPU Annual Report",
+          "Code of Conduct",
+          "NIRF",
+          "Financial Statements",
+          "Soft Skills & Aptitude",
+          "Reports",
+        ],
+      },
+    ],
+  },
+};
 
 const Navbar = () => {
   const [isHelplineOpen, setIsHelplineOpen] = useState(false);
@@ -277,7 +291,6 @@ const Navbar = () => {
   const toggleMobileDropdown = (dropdownName) => {
     setMobileDropdown(mobileDropdown === dropdownName ? null : dropdownName);
   };
-
 
   const renderDropdownContent = (content) => (
     <div className="max-w-8xl px-8 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 animate-in fade-in-0 zoom-in-95 duration-300 bg-secondary">
@@ -361,7 +374,7 @@ const Navbar = () => {
       {/* ===== NAVBAR ===== */}
       <nav
         ref={navbarRef}
-        className="w-full h-[12vh] flex bg-white text-secondary shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
+        className="w-full h-[12vh] flex bg-white text-black shadow-sm font-sans fixed top-0 left-0 right-0 z-50" // Changed from sticky to fixed
       >
         {/* Left: Logo - 80% width on mobile */}
         <div className="w-full md:w-[30%] h-full flex items-center justify-start md:pl-0 md:justify-center">
@@ -371,7 +384,7 @@ const Navbar = () => {
               alt="Logo"
               height={300}
               width={300}
-              className="h-40 w-[80%] md:h-40 md:w-full cursor-pointer object-contain transition-transform duration-300 "
+              className="w-auto cursor-pointer object-contain transition-transform duration-300 "
               priority
               unoptimized={true}
             />
@@ -388,43 +401,74 @@ const Navbar = () => {
                   href="https://rapid.grayquest.com/iudp-master"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-secondary transition-colors duration-200"
+                  className="relative inline-block group hover:text-secondary transition-colors duration-200"
                 >
                   Pay Fee
+                  {/* AQUA UNDERLINE — your original version */}
+                  <span
+                    className="absolute left-0 -bottom-1 h-[6px] w-full 
+               scale-x-0 bg-[#7FFFD4] opacity-70 
+               transition-transform duration-300 
+               origin-left group-hover:scale-x-100"
+                  ></span>
                 </a>
+
                 <span className="text-secondary">|</span>
                 <a
                   href="http://220.226.204.21/login.aspx/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-secondary transition-colors duration-200"
+                  className="relative inline-block group hover:text-secondary transition-colors duration-200"
                 >
                   ERP Login
+                  {/* AQUA UNDERLINE */}
+                  <span
+                    className="absolute left-0 -bottom-1 h-[6px] w-full 
+               scale-x-0 bg-[#7FFFD4] opacity-70 
+               transition-transform duration-300 
+               origin-left group-hover:scale-x-100"
+                  ></span>
                 </a>
+
                 <span className="text-secondary">|</span>
                 <a
                   href="https://app.joinsuperset.com/join/#/signup/student/placements/621c7653-bdeb-4ee2-bb72-765e5d1d9635"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-secondary transition-colors duration-200"
+                  className="relative inline-block group hover:text-secondary transition-colors duration-200"
                 >
                   Superset
+                  {/* AQUA UNDERLINE */}
+                  <span
+                    className="absolute left-0 -bottom-1 h-[6px] w-full 
+               scale-x-0 bg-[#7FFFD4] opacity-70 
+               transition-transform duration-300 
+               origin-left group-hover:scale-x-100"
+                  ></span>
                 </a>
+
                 <span className="text-secondary">|</span>
-                <a
+                {/* <a
                   href="https://lc-icem-sumedh.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-primary transition-colors duration-200"
                 >
                   Leaving Certificate
-                </a>
-                <span className="text-secondary">|</span>
+                </a> */}
+                {/* <span className="text-secondary">|</span> */}
                 <Link
                   href="/contact"
-                  className="hover:text-primary "
+                  className="relative inline-block group hover:text-primary transition-colors duration-200"
                 >
                   Contact Us
+                  {/* AQUA UNDERLINE */}
+                  <span
+                    className="absolute left-0 -bottom-1 h-[6px] w-full 
+               scale-x-0 bg-[#7FFFD4] opacity-70 
+               transition-transform duration-300 
+               origin-left group-hover:scale-x-100"
+                  ></span>
                 </Link>
               </div>
               {/* Buttons */}
@@ -446,42 +490,55 @@ const Navbar = () => {
               onPointerEnter={() => handleMouseEnter("aboutUs")}
               onPointerLeave={handleMouseLeave}
             >
-              <span>About Us</span>
-              <FiChevronDown
+              <span className="relative">
+                About Us
+                {/* AQUA UNDERLINE */}
+                <span className="absolute left-0 -bottom-1 h-[6px] w-full scale-x-0 bg-[#7FFFD4]  opacity-70 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+              </span>
+              {/* <FiChevronDown
                 className={`w-3 h-3 transition-transform duration-300 ${
                   activeDropdown === "aboutUs" ? "rotate-180" : ""
                 }`}
-              />
+              /> */}
             </div>
             <div
               className="flex items-center gap-1  px-5  cursor-pointer hover:text-secondary transition-all duration-200 group"
               onPointerEnter={() => handleMouseEnter("campusLife")}
               onPointerLeave={handleMouseLeave}
             >
-              <span>Campus Life</span>
-              <FiChevronDown
+              <span className="relative">
+                Campus Life
+                <span className="absolute left-0 -bottom-1 h-[6px] w-full scale-x-0 bg-[#7FFFD4]  opacity-70 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+              </span>
+              {/* <FiChevronDown
                 className={`w-3 h-3 transition-transform duration-300 ${
                   activeDropdown === "campusLife" ? "rotate-180" : ""
                 }`}
-              />
+              /> */}
             </div>
             <div
               className="flex items-center gap-1  px-5  cursor-pointer hover:text-secondary transition-all duration-200 group"
               onPointerEnter={() => handleMouseEnter("programs")}
               onPointerLeave={handleMouseLeave}
             >
-              <span>Programs & Admission</span>
-              <FiChevronDown
+              <span className="relative">
+                Programs & Admission
+                <span className="absolute left-0 -bottom-1 h-[6px] w-full scale-x-0 bg-[#7FFFD4]  opacity-70 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+              </span>
+              {/* <FiChevronDown
                 className={`w-3 h-3 transition-transform duration-300 ${
                   activeDropdown === "programs" ? "rotate-180" : ""
                 }`}
-              />
+              /> */}
             </div>
             <Link
               href="/placement"
               className="hover:text-secondary  px-5  transition-colors duration-200 group"
             >
-              Placement
+              <span className="relative">
+                Placement
+                <span className="absolute left-0 -bottom-1 h-[6px] w-full scale-x-0 bg-[#7FFFD4]  opacity-70 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+              </span>
             </Link>
             {/* <Link
               href="/nism"
@@ -493,13 +550,19 @@ const Navbar = () => {
               href="/alumni"
               className="hover:text-secondary  px-5  transition-colors duration-200 group"
             >
-              Alumni
+              <span className="relative">
+                Alumni
+                <span className="absolute left-0 -bottom-1 h-[6px] w-full scale-x-0 bg-[#7FFFD4]  opacity-70 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+              </span>
             </Link>
             <Link
               href="/research"
               className="hover:text-secondary  px-5  transition-colors duration-200 group"
             >
-              Research
+              <span className="relative">
+                Research
+                <span className="absolute left-0 -bottom-1 h-[6px] w-full scale-x-0 bg-[#7FFFD4] rounded-md opacity-70 transition-transform duration-300 origin-left group-hover:scale-x-100"></span>
+              </span>
             </Link>
           </div>
         </div>

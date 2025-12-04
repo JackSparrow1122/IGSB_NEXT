@@ -58,7 +58,7 @@ export default function CTASection() {
   className="
     bg-white text-[#002D72] font-semibold px-8 py-3 rounded-md 
     transition-all duration-300 
-    hover:bg-gray-100 
+        hover:bg-[#7FFFD4]
     hover:shadow-lg 
     hover:-translate-y-1
   "
@@ -71,7 +71,8 @@ export default function CTASection() {
   className="
     bg-white text-[#002D72] font-semibold px-8 py-3 rounded-md 
     transition-all duration-300 
-    hover:bg-gray-100 
+    hover:bg-[#7FFFD4]
+    
     hover:shadow-lg 
     hover:-translate-y-1
   "

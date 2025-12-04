@@ -11,6 +11,8 @@ import EventsSection from "@/components/home/EventSection";
 import CTASection from "@/components/home/CTASection";
 import InstagramMosaic from "@/components/home/InstagramMosaic";
 import NewDiscover from "@/components/home/newDiscover";
+import ProgrammesSection from "@/components/home/ProgrammesSection";
+import Phd from "@/components/home/Phd";
 
 
 export default function HomePage() {
@@ -18,9 +20,11 @@ export default function HomePage() {
     <div className="bg-white text-gray-900">
       <ScrollCrushWrapper Hero={<HeroSlider />}>
         <ExploreSection />
-        <NewDiscover />
+        {/* <NewDiscover /> */}
 
-        <DiscoverPaths />
+        {/* <DiscoverPaths /> */}
+        <ProgrammesSection />
+        <Phd />
         <AcademicYearSection />
         <RecruitersSection />
         <EnergyInnovation />

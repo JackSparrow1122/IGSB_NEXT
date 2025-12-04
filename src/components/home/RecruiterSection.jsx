@@ -141,7 +141,7 @@ const RecruitersSection = () => {
                 bg-[linear-gradient(145deg,#278da4_0%,#003c84_90%)] text-white 
                 flex flex-col items-center justify-center shadow-xl 
                 border-[4px] border-[#D4AF37]">
-              <p className="text-lg md:text-2xl font-bold">350+</p>
+              <p className="text-lg md:text-2xl font-bold">650+</p>
               <p className="text-xs md:text-base font-medium">Corporates</p>
             </div>
           </div>

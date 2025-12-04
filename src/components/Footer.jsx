@@ -5,127 +5,134 @@ import React from "react";
 import Image from "next/image";
 import {
   FaPhoneAlt,
-  FaEnvelope,
+  FaEnvelope
+} from "react-icons/fa";
+
+import {
   FaFacebookF,
   FaLinkedinIn,
-  FaTwitter,
   FaInstagram,
-} from "react-icons/fa";
+  FaYoutube
+} from "react-icons/fa6";
+
 
 const Footer = () => {
   return (
-    <footer className="bg-zinc-100 text-gray-800 border-t border-gray-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-10 sm:py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-10">
-        {/* ===== Left Section ===== */}
+    <footer className="bg-white text-gray-800 border-t border-gray-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-12">
+
+        {/* -----------------------------------------------
+           LEFT COLUMN (Logo + Institute Name + Social Links)
+        ------------------------------------------------ */}
         <div>
-          <div className="flex items-center mb-4">
-            <Image
-              src="/Logo.png"
-              alt="ICEM Logo"
-              height={200}
-              width={200}
-              className="h-12 sm:h-16 mr-3 w-auto"
-            />
-          </div>
+          <Image
+            src="/Logo.png"
+            alt="IGSB Logo"
+            width={120}
+            height={120}
+            className="mb-4"
+          />
 
-          <p className="text-xs sm:text-sm text-gray-600 leading-relaxed mb-4">
-            <span className="font-semibold block mb-1">
-              📍 Indira Chanakya Campus (ICC)
-            </span>
-            S.No. 64,65, Gat No. 276 At Post : Parandwadi,
-            <br />
-            Near Somatne phata, Tal. : Maval, Dist. Pune – 410 506
+          <p className="text-gray-700 text-sm font-medium leading-tight">
+            Shree Chanakya Education Society’s
+          </p>
+          <h2 className="text-xl font-extrabold text-gray-900 leading-tight mt-1">
+            INDIRA GLOBAL SCHOOL <br /> OF BUSINESS
+          </h2>
+
+          <p className="text-xs text-gray-600 mt-2">
+            "Empowering Minds to Elevate Lives"
           </p>
 
-          <p className="text-xs sm:text-sm flex items-center gap-2 mb-1">
-            <FaPhoneAlt className="text-primary text-sm sm:text-base" /> 02114 –
-            661500 / 666
-          </p>
-          <p className="text-xs sm:text-sm flex items-center gap-2 mb-4">
-            <FaEnvelope className="text-primary text-sm sm:text-base" />{" "}
-            info@indiraicem.ac.in
-          </p>
-
-          {/* Social Media */}
-          <div className="flex gap-4 text-base sm:text-lg">
-            <a href="#" className="text-blue-700 hover:text-primary">
-              <FaFacebookF />
-            </a>
-            <a href="#" className="text-blue-700 hover:text-primary">
-              <FaLinkedinIn />
-            </a>
-            <a href="#" className="text-blue-700 hover:text-primary">
-              <FaTwitter />
-            </a>
-            <a href="#" className="text-blue-700 hover:text-primary">
-              <FaInstagram />
-            </a>
+          {/* Social Icons */}
+          <div className="flex gap-4 mt-4 text-xl text-blue-700">
+            <FaFacebookF className="cursor-pointer hover:text-blue-900" />
+            <FaLinkedinIn className="cursor-pointer hover:text-blue-900" />
+            <FaInstagram className="cursor-pointer hover:text-blue-900" />
+            <FaYoutube className="cursor-pointer hover:text-blue-900" />
           </div>
         </div>
 
-        {/* ===== Middle Section: Featured Links ===== */}
-        <div>
-          <h3 className="text-base sm:text-lg font-bold text-blue-900 mb-3 sm:mb-4">
-            Featured Links
-          </h3>
-          <div className="grid grid-cols-2 gap-x-4 sm:gap-x-6 text-xs sm:text-sm text-gray-700">
-            <ul className="space-y-2">
-              <li>Staff Grievance Form</li>
-              <li>Women Welfare Policy</li>
-              <li>Anti Ragging Policy</li>
-              <li>Faculty Application Form</li>
-              <li>SPPU</li>
-              <li>AICTE</li>
+        {/* -----------------------------------------------
+           CENTER COLUMN (Featured Links)
+        ------------------------------------------------ */}
+        <div className="grid grid-cols-2 gap-10">
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">
+              Featured Links
+            </h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>MBA Admissions</li>
+              <li>Alumni</li>
+              <li>Contact Us</li>
               <li>Privacy Policy</li>
             </ul>
-            <ul className="space-y-2">
-              <li>DTE</li>
-              <li>MahaDBT</li>
-              <li>Mandatory Disclosure</li>
-              <li>AICTE Approval</li>
-              <li>Fees Regulating Authority</li>
-              <li>Feedback</li>
+          </div>
+
+          <div>
+            <h3 className="text-lg font-bold text-gray-900 mb-4 opacity-0">
+              Featured Links
+            </h3>
+            <ul className="space-y-2 text-sm text-gray-700">
+              <li>Vidya Lakshmi Portal</li>
+              <li>AICTE Feedback</li>
+              <li>Students Engagement</li>
+              <li>Student Achievements</li>
+              <li>Student Life at IGSB</li>
+              <li>New Voter Registration</li>
             </ul>
           </div>
         </div>
 
-        {/* ===== Right Section: Popular Posts ===== */}
+        {/* -----------------------------------------------
+           RIGHT COLUMN (Contact Us)
+        ------------------------------------------------ */}
         <div>
-          <h3 className="text-base sm:text-lg font-bold text-blue-900 mb-3 sm:mb-4">
-            Popular Posts
-          </h3>
-          <div className="flex items-center gap-3 mb-4">
-            <div className="w-16 h-14 sm:w-20 sm:h-16 bg-gray-300 rounded-md flex items-center justify-center text-gray-600 text-[10px] sm:text-xs">
-              Image
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 text-xs sm:text-sm leading-tight">
-                Investment Opportunities for Women in India
-              </h4>
-              <p className="text-[10px] sm:text-xs text-gray-500 mt-1">
-                March 15, 2023
-              </p>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-16 h-14 sm:w-20 sm:h-16 bg-gray-300 rounded-md flex items-center justify-center text-gray-600 text-[10px] sm:text-xs">
-              Image
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-800 text-xs sm:text-sm leading-tight">
-                Importance of Pre-planning to Achieve Success
-              </h4>
-              <p className="text-[10px] sm:text-xs text-gray-500 mt-1">
-                January 27, 2023
-              </p>
-            </div>
-          </div>
+          <h3 className="text-lg font-bold text-gray-900 mb-4">Contact Us</h3>
+
+          <p className="text-sm font-semibold text-gray-900">Address</p>
+          <p className="text-sm text-gray-700 mt-1 mb-4 leading-relaxed">
+            S.No. 64, 65, Gat No. 276,<br />
+            At Post : Parandwadi, Near Somatnephata,<br />
+            Tal. : Maval, Dist.: Pune – 410 506
+          </p>
+
+          <p className="text-sm font-semibold text-gray-900">Phone Number:</p>
+          <p className="text-sm text-gray-700 mt-1">
+            <strong>MBA:</strong> <br />
+            Mobile: 9657856103 <br />
+            Tel.: 02114691417
+          </p>
+          <p className="text-sm text-gray-700 mt-2">
+            <strong>For Administrative Purpose:</strong> <br />
+            Mobile: +91 9657856103
+          </p>
+
+          <p className="text-sm font-semibold text-gray-900 mt-4">Email:</p>
+
+          <p className="text-sm text-gray-700 mt-1">
+            <strong>For verification of student/Alumni academic records:</strong>
+            <br />
+            exam.committee@indiragsb.edu.in
+          </p>
+
+          <p className="text-sm text-gray-700 mt-2">
+            <strong>MBA:</strong> <br />
+            mba.admissions@indiragsb.edu.in
+          </p>
+
+          <p className="text-sm text-gray-700 mt-2">
+            <strong>For Administrative Purpose:</strong> <br />
+            admin@indiragsb.edu.in
+          </p>
         </div>
+
       </div>
 
-      {/* ===== Bottom Bar ===== */}
-      <div className="bg-secondary text-white text-center py-2 sm:py-3 text-xs sm:text-sm">
-        © 2024. Indira College of Engineering and Management.
+      <div className="bg-secondary text-white text-center py-3 text-xs sm:text-sm">
+        © 2024. Indira Global School of Business.
       </div>
     </footer>
   );

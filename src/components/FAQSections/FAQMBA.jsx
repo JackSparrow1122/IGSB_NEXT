@@ -568,8 +568,8 @@ Must obtain a non-zero positive score in MAH-MBA/MMS-CET, CAT, CMAT.`,
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* LEFT MENU */}
           <nav className="lg:col-span-1 bg-white rounded-xl shadow-sm p-6 space-y-2 border border-gray-300 sticky top-24">
-            <h3 className="font-semibold text-gray-800 mb-4 text-lg">
-              Quick Links
+            <h3 className="font-semibold text-gray-800 mb-4 text-lg text-center">
+              MBA Overview
             </h3>
 
             {tabs.map((tab) => (
@@ -589,9 +589,9 @@ Must obtain a non-zero positive score in MAH-MBA/MMS-CET, CAT, CMAT.`,
 
           {/* RIGHT CONTENT */}
           <div className="lg:col-span-3 bg-white rounded-xl shadow-sm p-8 border border-gray-300">
-            <div className="mb-6 pb-4 border-b border-gray-300">
+            {/* <div className="mb-6 pb-4 border-b border-gray-300">
               <h3 className="text-2xl font-bold text-secondary">{active}</h3>
-            </div>
+            </div> */}
 
             {renderContent(sectionContent[active])}
           </div>
